@@ -1,0 +1,32 @@
+.navbar {
+	font-family: proxima-nova, sans-serif;
+	color: #787777;
+}
+
+.navbarContent {
+	width: 50%;
+	height: 100px;
+	margin: 10px auto 0 auto;
+	padding: 0 auto 0 auto;
+	display: table;
+}
+
+.navbarOptionCover {
+	width: 320px;
+	margin: 0 auto 0 auto;
+	overflow: auto
+}
+
+.navbarOption {
+	float: left;
+	margin: 0 0 0 0;
+	padding: 0 1% 0 1%;
+	text-align: center;
+	display: table-cell;
+	width: 80px;
+}
+
+.navbarOption:hover {
+	background-color: #E6E6E6;
+	cursor: hand;
+}

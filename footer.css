@@ -1,0 +1,33 @@
+.footer {
+	font-family: proxima-nova, sans-serif;
+	color: #787777;
+	width: 110%;
+	margin: 100px -5% -10px -5%;
+	overflow: auto;
+	background-color: #E6E6E6;
+}
+
+.footerContent {
+	width: 400px;
+	margin: 0 auto 0 auto;
+	padding: 40px 0 40px 0;
+	overflow: auto;
+}
+
+.footerOption {
+	width: 100px;
+	height: 50px;
+	display: table;
+	float: left;
+}
+
+.footerOption p {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.footerCompanyName {
+	padding: 60px 0 0 0;
+	text-align: center;
+}

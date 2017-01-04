@@ -1,0 +1,31 @@
+.dashboards {
+	margin: 6% 15% 0 15%;
+	width: 70%;
+	height: auto;
+}
+
+.dashboardsFields {
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+
+.rowBox {
+	float: left;
+	width: 23%;
+	height: 200px;
+	margin: 1%;
+	border-style: solid;
+	display: table;
+}
+
+.rowBox p{
+	font-size: 20px;
+	font-weight: 200;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.rowBox:hover {
+	background-color: #E6E6E6;
+}

@@ -1,0 +1,113 @@
+body {
+	font-family: proxima-nova, sans-serif !important;
+	color: #787777 !important;	
+}
+
+.frontPage {
+	font-family: proxima-nova, sans-serif !important;
+	color: #787777 !important;
+	overflow: auto;
+}
+
+.cliniciansSearchFields {
+	border-style: solid;
+	border-color: #ADADAD;
+	border-width: 1px;
+	width: 60%;
+	height: 36px;
+	margin: 8% auto 4% auto;
+}
+
+.searchDropdownSpecialtyButton {
+	border-color: white !important;
+	margin: 0 auto 0 auto !important;
+	width: 100% !important;
+	text-align: center !important;
+	color: #787777 !important;
+	font-family: proxima-nova, sans-serif;
+}
+
+.searchDropdownLocationButton {
+	border-color: white !important;
+	margin: 0 auto 0 auto !important;
+	width: 100% !important;
+	text-align: center !important;
+	color: #787777 !important;
+	font-family: proxima-nova, sans-serif;
+}
+
+.searchDropdownDurationButton {
+	border-color: white !important;
+	margin: 0 auto 0 auto !important;
+	width: 100% !important;
+	text-align: center !important;
+	color: #787777 !important;
+	font-family: proxima-nova, sans-serif;
+}
+
+.searchBoxSearchTab {
+	border-color: white;
+	border-left: solid;
+	border-right: solid;
+	border-width: 1px;
+}
+
+.searchBoxSearchTab input {
+	padding: 4px;
+	height: 34px;
+	width: 123%;
+	margin: 0 0 0 3px;
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    border: 0px solid #eee;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: black;
+    text-align: center;
+   	font-family: proxima-nova, sans-serif;
+	color: #787777;
+}
+
+.searchFieldHoveringArea {
+	border-color: white;
+	width: 19% !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	float: left;
+}
+
+.searchFieldSearchButtonArea {
+	width: 19% !important;
+	float: right !important;
+	font-family: proxima-nova, sans-serif;
+}
+
+.searchFieldSearchButton {
+	width: 100% !important;
+	border-left: solid !important;
+	border-radius: 0px !important;
+	border-width: 1px !important;
+	border-color: #ADADAD !important;
+}
+
+.searchFields {
+	width: 100%;
+	height: 400px;
+}
+
+.searchFields p{
+	font-weight: 200;
+	font-size: 40px;
+	text-align: center;
+	margin: 50px 0 0 0;
+}
+
+.mainBackgroundButtons {
+	margin: 2% 25% 4% 25%;
+	width: 50% !important;
+}
+
+.show-on-hover:hover > ul.dropdown-menu {
+    display: block;    
+}
