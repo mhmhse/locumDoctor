@@ -7,6 +7,7 @@ body {
 	font-family: proxima-nova, sans-serif !important;
 	color: #787777 !important;
 	overflow: auto;
+	background-color: red;
 }
 
 .cliniciansSearchFields {
