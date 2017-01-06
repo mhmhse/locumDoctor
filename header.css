@@ -1,6 +1,6 @@
 .navbar {
 	font-family: proxima-nova, sans-serif;
-	color: #787777;
+	color: #10A7EA;
 }
 
 .navbarContent {
@@ -9,6 +9,8 @@
 	margin: 10px auto 0 auto;
 	padding: 0 auto 0 auto;
 	display: table;
+	color:#FFFFFF;
+	background color: #10A7EA
 }
 
 .navbarOptionCover {
