@@ -5,9 +5,9 @@ body {
 
 .frontPage {
 	font-family: proxima-nova, sans-serif !important;
-	color: #787777 !important;
+	color: #FFFFFF !important;
 	overflow: auto;
-	background-color: red;
+	background-color: #10A7EA;
 }
 
 .cliniciansSearchFields {
