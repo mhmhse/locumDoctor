@@ -1,6 +1,6 @@
 .navbar {
 	font-family: proxima-nova, sans-serif;
-	color: #10A7EA;
+	color: ##ffffff ;
 	background-color: #10A7EA;
 	margin-bottom: 0px !important;
 }
@@ -19,6 +19,7 @@
 	width: 320px;
 	margin: 0 auto 0 auto;
 	overflow: auto;
+	color:#FFFFFF;
 }
 
 .navbarOption {
@@ -28,6 +29,8 @@
 	text-align: center;
 	display: table-cell;
 	width: 80px;
+	color:#FFFFFF;
+
 }
 
 .navbarOption:hover {
