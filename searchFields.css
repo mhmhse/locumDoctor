@@ -9,6 +9,10 @@ body {
     font-size: 34px !important;
     line-height: 46px !important;
     letter-spacing: 0.05em !important;
+    width: 50%;
+    min-width: 400px;
+    text-align: center;
+    margin: 0 auto 0 auto !important;
 }
 
 .frontPageButtonWrapper:hover {
@@ -32,12 +36,22 @@ body {
 }
 
 .cliniciansSearchFields {
-	border-style: solid;
-	border-color: #ADADAD;
-	border-width: 1px;
+	background-color: white;
 	width: 60%;
 	height: 36px;
 	margin: 8% auto 4% auto;
+}
+
+.searchFieldHoveringArea:hover {
+	background-color: #E15237 !important;
+	cursor: hand !important;
+}
+
+.searchDropdownSpecialtyButton:hover {
+	background-color: #E15237 !important;
+	cursor: hand !important;
+	margin: 0 !important;
+	border-color: #E15237 !important;
 }
 
 .searchDropdownSpecialtyButton {
@@ -57,6 +71,12 @@ body {
 	color: #787777 !important;
 	font-family: proxima-nova, sans-serif;
 }
+.searchDropdownLocationButton:hover {
+	background-color: #E15237 !important;
+	cursor: hand !important;
+	margin: 0 !important;
+	border-color: #E15237 !important;
+}
 
 .searchDropdownDurationButton {
 	border-color: white !important;
@@ -65,6 +85,13 @@ body {
 	text-align: center !important;
 	color: #787777 !important;
 	font-family: proxima-nova, sans-serif;
+}
+
+.searchBoxSearchTab:hover {
+	background-color: #E15237 !important;
+	cursor: hand !important;
+	margin: 0 !important;
+	border-color: #E15237 !important;
 }
 
 .searchBoxSearchTab {

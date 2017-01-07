@@ -1,7 +1,7 @@
 .navbar {
-	font-family: proxima-nova, sans-serif;
+	font-family: brandon-grotesque, sans-serif !important;
 	color: ##ffffff ;
-	background-color: #10A7EA;
+	background-color: #AAD4E2;
 	margin-bottom: 0px !important;
 }
 
@@ -12,7 +12,7 @@
 	padding: 0 auto 0 auto;
 	display: table;
 	color:#AAD4E2;
-	background-color: #10A7EA; 
+	background-color: #AAD4E2; 
 }
 
 .navbarOptionCover {
@@ -34,6 +34,6 @@
 }
 
 .navbarOption:hover {
-	background-color: #E6E6E6;
+	background-color: #E15237;
 	cursor: hand;
 }
