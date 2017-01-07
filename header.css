@@ -1,17 +1,15 @@
 .navbar {
 	font-family: brandon-grotesque, sans-serif !important;
-	color: ##ffffff ;
 	background-color: #AAD4E2;
 	margin-bottom: 0px !important;
 }
 
 .navbarContent {
 	width: 50%;
-	height: 100px;
+	height: 30px;
 	margin: 10px auto 0 auto;
 	padding: 0 auto 0 auto;
 	display: table;
-	color:#AAD4E2;
 	background-color: #AAD4E2; 
 }
 
@@ -19,7 +17,6 @@
 	width: 320px;
 	margin: 0 auto 0 auto;
 	overflow: auto;
-	color:#FFFFFF;
 }
 
 .navbarOption {
@@ -29,11 +26,10 @@
 	text-align: center;
 	display: table-cell;
 	width: 80px;
-	color:#FFFFFF;
+	color: whitesmoke !important;
 
 }
 
 .navbarOption:hover {
-	background-color: #E15237;
 	cursor: hand;
 }

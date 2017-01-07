@@ -1,6 +1,6 @@
 body {
 	font-family: proxima-nova, sans-serif !important;
-	color: #787777 !important;	
+	color: white !important;	
 }
 
 .frontPageIntro {
@@ -15,24 +15,12 @@ body {
     margin: 0 auto 0 auto !important;
 }
 
-.frontPageButtonWrapper:hover {
-	background-color: #EA5310 !important;
-}
-
 .frontPage {
 	font-family: proxima-nova, sans-serif !important;
-	color: #FFFFFF !important;
+	color: #185674 !important;
 	overflow: auto;
-	background-color: #AAD4E2;
-}
-
-.cliniciansButton {
-	color: #10A7EA;
-	background-color: ;
-}
-.InstitutionsButton {
-	color: #10A7EA;
-	background-color: ;
+	background-color: white;
+	padding: 50px 0 0 0;
 }
 
 .cliniciansSearchFields {
@@ -40,58 +28,18 @@ body {
 	width: 60%;
 	height: 36px;
 	margin: 8% auto 4% auto;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #E6E6E6;
 }
 
-.searchFieldHoveringArea:hover {
-	background-color: #E15237 !important;
-	cursor: hand !important;
-}
-
-.searchDropdownSpecialtyButton:hover {
-	background-color: #E15237 !important;
-	cursor: hand !important;
-	margin: 0 !important;
-	border-color: #E15237 !important;
-}
-
-.searchDropdownSpecialtyButton {
+.searchDropdownButton {
 	border-color: white !important;
 	margin: 0 auto 0 auto !important;
 	width: 100% !important;
 	text-align: center !important;
-	color: #787777 !important;
-	font-family: proxima-nova, sans-serif;
-}
-
-.searchDropdownLocationButton {
-	border-color: white !important;
-	margin: 0 auto 0 auto !important;
-	width: 100% !important;
-	text-align: center !important;
-	color: #787777 !important;
-	font-family: proxima-nova, sans-serif;
-}
-.searchDropdownLocationButton:hover {
-	background-color: #E15237 !important;
-	cursor: hand !important;
-	margin: 0 !important;
-	border-color: #E15237 !important;
-}
-
-.searchDropdownDurationButton {
-	border-color: white !important;
-	margin: 0 auto 0 auto !important;
-	width: 100% !important;
-	text-align: center !important;
-	color: #787777 !important;
-	font-family: proxima-nova, sans-serif;
-}
-
-.searchBoxSearchTab:hover {
-	background-color: #E15237 !important;
-	cursor: hand !important;
-	margin: 0 !important;
-	border-color: #E15237 !important;
+	color: #857777 !important;
+	font-family: proxima-nova, sans-serif !important;	
 }
 
 .searchBoxSearchTab {
@@ -134,15 +82,16 @@ body {
 
 .searchFieldSearchButton {
 	width: 100% !important;
-	border-left: solid !important;
-	border-radius: 0px !important;
-	border-width: 1px !important;
+	border-style: none !important;
 	border-color: #ADADAD !important;
+	background-color: #FC6028 !important;
+	color: white !important;
 }
 
 .searchFields {
 	width: 100%;
 	height: 400px;
+/*	background-image: url("stockphoto.png");*/
 }
 
 .searchFields p{
