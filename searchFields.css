@@ -3,11 +3,32 @@ body {
 	color: #787777 !important;	
 }
 
+.frontPageIntro {
+	font-family: brandon-grotesque, sans-serif !important;
+    font-weight: 500 !important;
+    font-size: 34px !important;
+    line-height: 46px !important;
+    letter-spacing: 0.05em !important;
+}
+
+.frontPageButtonWrapper:hover {
+	background-color: #EA5310 !important;
+}
+
 .frontPage {
 	font-family: proxima-nova, sans-serif !important;
 	color: #FFFFFF !important;
 	overflow: auto;
-	background-color: #10A7EA;
+	background-color: #AAD4E2;
+}
+
+.cliniciansButton {
+	color: #10A7EA;
+	background-color: ;
+}
+.InstitutionsButton {
+	color: #10A7EA;
+	background-color: ;
 }
 
 .cliniciansSearchFields {
