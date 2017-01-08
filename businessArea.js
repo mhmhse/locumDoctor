@@ -18,30 +18,11 @@ var presentPostings = [
 	ClientContact: "conrad.crassierer@mdanderson.com", 
 	Date: "March 15, 2016 - March 30, 2016", 
 	Experience: "5 Years", 
-	Qualifications: "DDS or DMD (Degrees or Certifications)",
-	TotalHours: "40 - 100 Hours",
-	Rates: "USD 130 per hour", 
-	Overtime: "No",
-	NonLocalHousingAndPerDiem: "Yes; 250 per Day Limit",
-	InsuranceRequirements: "Malpractice--Hospital Covered",
-	InsuranceAccepted: "Aetna, Blue Cross, Oscar" 
-	},
-	{
-	Specialty: "Dentists",
-	SpecialtyBreakdown: "Dentist--Implant", 
-	Location: "Texas",
-	Duration: "1-2 Weeks", 
-	Flexible: "Yes",
-	DiscloseClientName: "Yes",
-	Client: "MD Anderson--Houston Center", 
-	ClientContact: "conrad.crassierer@mdanderson.com", 
-	Date: "March 15, 2016 - March 30, 2016", 
-	Experience: "5 Years", 
 	Qualifications: "DDS or DMD (Degrees or Certifications)", 
 	Rates: "130 per hour", 
 	NonLocalHousingAndPerDiem: "Yes; 250 per Day Limit",
 	InsuranceRequirements: "Malpractice--Hospital Covered",
 	InsuranceAccepted: "Aetna, Blue Cross, Oscar" 
-	},
+	}
 ]
 

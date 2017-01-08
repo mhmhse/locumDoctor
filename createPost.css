@@ -1,0 +1,79 @@
+.createDemandFormGeneralProperties {
+	min-width: 400px;
+	width: 50%;
+	margin: 20px auto 20px auto;
+	padding: 20px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #AAD4E2;
+}
+
+/*.createDemandFormInstitution {
+	width: 50%;
+	margin: 0 auto 0 auto;
+	padding: 20px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #AAD4E2;
+}*/
+
+.createDemandFormSectionHeader {
+	text-align: center;
+	font-size: 20px;
+}
+
+.createDemandFormRow {
+	width: 100%;
+	min-width: 350px;
+	margin: 10px auto 0 auto;
+}
+
+.createDemandFormRowField {
+	width: 100%;
+	min-width: 350px;
+	margin: 10px 0 10px 0;
+	overflow: auto;
+}
+
+.createDemandFormRowFieldOne {
+	width: 90%;
+	min-width: 300px;
+	float: left;
+}
+
+.createDemandFormRowFieldTwo {
+	padding-left: 91%;
+}
+
+.createDemandFormRowFieldColumnOne {
+	width: 50%;
+	float: left;
+}
+
+.createDemandFormRowFieldColumnTwo {
+	width: 50%;
+	float: left;
+}
+
+.createDemandFormRowFieldColumnRow {
+	width: 95%;
+}
+
+.createDemandFormCheckBox {
+	width: 100%;
+	min-width: 350px;
+	margin: 10px auto 0 auto;
+}
+
+.createDemandFormCheckBoxInput {
+	margin-left: 5px !important;
+}
+
+.formStateButton {
+	height: 26px;
+	padding: 0px;
+	width: 105% !important;
+	-webkit-border-radius: 0 !important;
+	-moz-border-radius: 0 !important;
+	border-radius: 0 !important;
+}
