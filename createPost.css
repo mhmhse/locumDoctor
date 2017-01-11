@@ -1,11 +1,46 @@
+.createDemandForm {
+	width: 100%;
+	overflow: auto;
+}
+
+.createDemandFormRowCover {
+	width: 100%;
+	overflow: auto;
+}
+
+.createDemandFormRow {
+	width: 98%;
+	height: 21px;
+	overflow: auto;
+	margin: 10px auto 0 auto;
+}
+
+.confidentialityRightAlign {
+	float: right;
+}
+
+@media (min-width: 600px) and (max-width: 1215px) {
+	.createDemandFormGeneralProperties {
+		min-width: 400px;
+		width: 48%;
+		margin: 20px auto 20px 15%;
+		padding: 20px !important;
+		border-style: solid;
+		border-width: 1px;
+		border-color: #AAD4E2;
+		float: left;
+	}
+}
+
 .createDemandFormGeneralProperties {
 	min-width: 400px;
-	width: 50%;
-	margin: 20px auto 20px auto;
+	width: 48%;
+	margin: 20px 1% 20px 1%;
 	padding: 20px;
 	border-style: solid;
 	border-width: 1px;
 	border-color: #AAD4E2;
+	float: left;
 }
 
 /*.createDemandFormInstitution {
@@ -20,12 +55,6 @@
 .createDemandFormSectionHeader {
 	text-align: center;
 	font-size: 20px;
-}
-
-.createDemandFormRow {
-	width: 100%;
-	min-width: 350px;
-	margin: 10px auto 0 auto;
 }
 
 .createDemandFormRowField {
@@ -48,15 +77,18 @@
 .createDemandFormRowFieldColumnOne {
 	width: 50%;
 	float: left;
+	margin: 0;
 }
 
 .createDemandFormRowFieldColumnTwo {
 	width: 50%;
 	float: left;
+	margin: 0;
 }
 
 .createDemandFormRowFieldColumnRow {
 	width: 95%;
+	height: 21px;
 }
 
 .createDemandFormCheckBox {
@@ -70,9 +102,9 @@
 }
 
 .formStateButton {
-	height: 26px;
+	height: 21px;
 	padding: 0px;
-	width: 105% !important;
+	width: 102% !important;
 	-webkit-border-radius: 0 !important;
 	-moz-border-radius: 0 !important;
 	border-radius: 0 !important;

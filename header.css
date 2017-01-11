@@ -5,7 +5,7 @@
 }
 
 .navbarContent {
-	width: 50%;
+	width: 90%;
 	height: 30px;
 	margin: 10px auto 0 auto;
 	padding: 0 auto 0 auto;
@@ -13,8 +13,15 @@
 	background-color: #AAD4E2; 
 }
 
+.navbarOptionCoverLeft {
+	float: left;
+}
+
+.navbarOptionCoverRight {
+	float: right;
+}
+
 .navbarOptionCover {
-	width: 320px;
 	margin: 0 auto 0 auto;
 	overflow: auto;
 }
@@ -25,7 +32,7 @@
 	padding: 0 1% 0 1%;
 	text-align: center;
 	display: table-cell;
-	width: 80px;
+	width: 100px;
 	color: whitesmoke !important;
 
 }
