@@ -1,0 +1,68 @@
+Searching 17 files for "DDS"
+
+/Users/rh/locumDoctor/businessArea.js:
+   19  	Date: "March 15, 2016 - March 30, 2016", 
+   20  	Experience: "5 Years", 
+   21: 	Qualifications: "DDS or DMD (Degrees or Certifications)", 
+   22  	Rates: "130 per hour", 
+   23  	NonLocalHousingAndPerDiem: "Yes; 250 per Day Limit",
+
+/Users/rh/locumDoctor/createDemand.js:
+   61  
+   62  		        	<label class="createDemandFormRow">Degree Required</label>
+   63: 					<input class="createDemandFormRow" type="text" name="Degree" placeholder="i.e. APRN or DDS"></input> 
+   64  
+   65  			        <label class="createDemandFormRow">Desired Prior Experience</label>
+
+/Users/rh/locumDoctor/createSupply.js:
+   61  
+   62  		        	<label class="createDemandFormRow">Degree Required</label>
+   63: 					<input class="createDemandFormRow" type="text" name="Degree" placeholder="i.e. APRN or DDS"></input> 
+   64  
+   65  			        <label class="createDemandFormRow">Desired Prior Experience</label>
+
+/Users/rh/locumDoctor/index.html:
+  138  					<div class="marketSupplyPostClient">MD Anderson--Houston Center</div>
+  139  					<div class="marketSupplyPostSpecialty">Dentists | Dentist--Implant</div>
+  140: 					<div class="marketSupplyPostQualifications">DDS or DMD | 5 Years Experience</div>
+  141  					<div class="marketSupplyPostDate">March 15, 2017 - March 30, 2017</div>
+  142  					<div class="marketSupplyHoursRates">40 - 100 Hours | $150/hour</div>
+  ...
+  148  					<div class="marketSupplyPostClient">MD Anderson--Houston Center</div>
+  149  					<div class="marketSupplyPostSpecialty">Dentists | Dentist--Implant</div>
+  150: 					<div class="marketSupplyPostQualifications">DDS or DMD | 5 Years Experience</div>
+  151  					<div class="marketSupplyPostDate">March 15, 2017 - March 30, 2017</div>
+  152  					<div class="marketSupplyHoursRates">40 - 100 Hours | $150/hour</div>
+  ...
+  158  					<div class="marketSupplyPostClient">MD Anderson--Houston Center</div>
+  159  					<div class="marketSupplyPostSpecialty">Dentists | Dentist--Implant</div>
+  160: 					<div class="marketSupplyPostQualifications">DDS or DMD | 5 Years Experience</div>
+  161  					<div class="marketSupplyPostDate">March 15, 2017 - March 30, 2017</div>
+  162  					<div class="marketSupplyHoursRates">40 - 100 Hours | $150/hour</div>
+  ...
+  168  					<div class="marketSupplyPostClient">MD Anderson--Houston Center</div>
+  169  					<div class="marketSupplyPostSpecialty">Dentists | Dentist--Implant</div>
+  170: 					<div class="marketSupplyPostQualifications">DDS or DMD | 5 Years Experience</div>
+  171  					<div class="marketSupplyPostDate">March 15, 2017 - March 30, 2017</div>
+  172  					<div class="marketSupplyHoursRates">40 - 100 Hours | $150/hour</div>
+
+7 matches across 4 files
+
+
+Searching 17 files for "marketPlaceContentsCover"
+
+/Users/rh/locumDoctor/index.html:
+  133  		</div>
+  134  
+  135: 		<div class="marketplaceContentsCover">
+  136  			<div class="marketSupplyPost">
+  137  				<div class="clinicianPostFirstRow">
+
+/Users/rh/locumDoctor/marketplace.css:
+   16  }
+   17  
+   18: .marketplaceContentsCover {
+   19  	width: 83%;
+   20  	min-width: 400px;
+
+2 matches across 2 files

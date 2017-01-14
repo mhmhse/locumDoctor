@@ -26,10 +26,13 @@
 	width: 490px;
 	height: 490px;
 	padding: 30px;
-	background-color: #E6E6E6;
+	background-color: white;
 	display: table;
     margin: 20px;
     float: left;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #AAD4E2;
 }
 
 .marketSupplyPost:hover {
@@ -69,6 +72,7 @@
 	margin: 0;
 	font-weight: 200;
 	padding-top: 15px;
+	color: white;
 }
 
 .clinicianProfilePhotoInfo {
@@ -91,7 +95,22 @@
 }
 
 .clinicianPostSecondRow {
-	color: black;
+	color: black !important;
+	overflow: auto;
+	margin: 10px 0 0 0;
+	text-align: center;
+}
+
+.clinicianPostSecondRow span {
+	margin: 0 10px 0 10px;
+}
+
+
+
+.clinicianPostThirdRow {
+	color: black !important;
+	overflow: auto;
+	margin: 10px 0 0 0;
 }
 
 .clinicianHeader {
@@ -111,30 +130,44 @@
 
 .clinicianCredentials {
 	float: left;
-	margin-top: 30px;
-	width: 300px;
-	height: 300px;
-	background-color: red;
+	margin: 0px;
+	width: 298px;
+	height: 280px;
 }
 
 .clinicianPreference {
 	float: left;
-	margin-top: 30px;
+	margin: 0px;
 	width: 130px;
-	height: 300px;
-	background-color: blue;
+	height: 280px;
+	text-align: center;
+	border-left-style: solid;
+	border-width: 1px;
+	border-color: #AAD4E2;
 }
 
-.clinicianSectionShort {
-	height: 30px;
-	margin-bottom: 10px;
+.clinicianAvailability{
+	padding: 60px 0 0 0;
+	width: 130px;
+	height: 20px;
 }
 
-.clinicianSectionLong {
-	height: 70px;
-	margin-bottom: 10px;
+.clinicianRates {
+	padding: 60px 0 0 0;
+	width: 130px;
+	height: 20px;
 }
 
+.clinicianSavings {
+	padding: 60px 0 0 0;
+	width: 130px;
+	height: 20px;
+}
+
+.clinicianSavingHow {
+	color: #AAD4E2;
+	font-size: 13px;
+}
 
 
 
