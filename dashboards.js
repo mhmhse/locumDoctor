@@ -9,6 +9,7 @@ $(document).ready(function(){
 		<div class="rowBox search${removeSpaceForClassName(bizSpecialty[arrayIndex])}" onclick="fetchSpecialtyTradingFloor('${removeSpaceForClassName(bizSpecialty[arrayIndex])}')">
 			<p>${bizSpecialty[arrayIndex]}</p>
 		</div>
+		
 		`
 	)
 
