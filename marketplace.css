@@ -10,13 +10,13 @@
 }
 
 .marketplaceButtons {
-	width: 245px;
+	width: 270px;
 	overflow: auto;
 	margin: 0 auto 0 auto;
 }
 
 .marketplaceContentsCover {
-	width: 80%;
+	width: 83%;
 	min-width: 400px;
 	overflow: auto;
 	margin: 50px auto 0 auto;
@@ -25,7 +25,7 @@
 .marketSupplyPost {
 	width: 490px;
 	height: 490px;
-	padding: 30px;
+	padding: 20px;
 	background-color: white;
 	display: table;
     margin: 20px;
@@ -96,16 +96,14 @@
 
 .clinicianPostSecondRow {
 	color: black !important;
-	overflow: auto;
-	margin: 10px 0 0 0;
+	height: 30px;
+	margin: 10px 0 20px 0;
 	text-align: center;
 }
 
 .clinicianPostSecondRow span {
 	margin: 0 10px 0 10px;
 }
-
-
 
 .clinicianPostThirdRow {
 	color: black !important;
@@ -124,7 +122,7 @@
 }
 
 .clinicianSubheaderDesc {
-	font-size: 10px;
+	font-size: 13px;
 	margin-left: 10px;
 }
 
@@ -138,7 +136,7 @@
 .clinicianPreference {
 	float: left;
 	margin: 0px;
-	width: 130px;
+	width: 150px;
 	height: 280px;
 	text-align: center;
 	border-left-style: solid;
@@ -147,21 +145,24 @@
 }
 
 .clinicianAvailability{
-	padding: 60px 0 0 0;
-	width: 130px;
+	margin: 20px 0 0 0;
+	width: 150px;
 	height: 20px;
+	overflow: auto;
 }
 
 .clinicianRates {
-	padding: 60px 0 0 0;
-	width: 130px;
+	margin: 20px 0 0 0;
+	width: 150px;
 	height: 20px;
+	overflow: auto;
 }
 
 .clinicianSavings {
-	padding: 60px 0 0 0;
-	width: 130px;
-	height: 20px;
+	margin: 20px 0 0 0;
+	width: 150px;
+	height: 80px;
+	overflow: auto;
 }
 
 .clinicianSavingHow {
@@ -169,6 +170,54 @@
 	font-size: 13px;
 }
 
+.clinicianSavingsBreakdownCover {
+	overflow: auto;
+}
+
+.clinicianSavingsBreakdown {
+	overflow: auto;
+	font-size: 12px;
+	margin-top: 10px;
+}
+
+.totalClinicSavings {
+	font-size: 12px;
+	margin-top: 20px;
+}
+
+.clinicianSavingsBeforeHover {
+	margin-top: 20px;
+}
+
+.clinicianRatesReplaceOnHover {
+	padding-top: 40px;
+	overflow: auto;
+}
+
+.fullTimeIcon {
+	width: 13px;
+	height: 13px;
+	border-radius: 50%;
+	background-color: black;
+	float: left;
+	margin: 2px 10px 0 10px;
+}
+
+.glyphicon {
+	float: left !important;
+}
+
+.clinicianPostSecondRowInnerCover {
+	width: 203px;
+	height: 16px;
+	overflow: auto;
+	margin: 0 auto 0 auto;
+}
+
+.iconLegend {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
 
 
 

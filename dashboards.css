@@ -2,11 +2,13 @@
 	margin: 6% 15% 0 15%;
 	width: 70%;
 	height: auto;
+	overflow: auto;
 }
 
 .dashboardsFields {
 	margin-left: auto !important;
 	margin-right: auto !important;
+	overflow: auto;
 }
 
 .rowBox {
@@ -30,4 +32,9 @@
 
 .rowBox:hover {
 	background-color: #AAD4E2;
+}
+
+.demandBoard {
+	width: 100%;
+	overflow: auto;
 }

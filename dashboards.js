@@ -4,7 +4,7 @@ $(document).ready(function(){
 	
 	for (arrayIndex in bizSpecialty) {
 
-		$(".dashboardsFields").append(
+		$(".supplyBoard").append(
 		`		
 		<div class="rowBox search${removeSpaceForClassName(bizSpecialty[arrayIndex])}" onclick="fetchSpecialtyTradingFloor('${removeSpaceForClassName(bizSpecialty[arrayIndex])}')">
 			<p>${bizSpecialty[arrayIndex]}</p>
