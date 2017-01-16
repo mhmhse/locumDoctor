@@ -14,17 +14,25 @@ function removeSpaceForClassName (array) {
 	return array.replace(/\s+/g, '');
 }
 
-function goToMarketPlace() {
-	console.log("goToMarketPlace is rendered")
+function goToDemandMarketPlace() {
 	$(".frontPage").hide()
+	$(".marketSupplyPost").hide()
+	$(".marketDemandPost").show()
 	$(".marketplace").show()
 }
 
+function goToSupplyMarketPlace() {
+	$(".frontPage").hide()
+	$(".marketDemandPost").hide()
+	$(".marketSupplyPost").show()
+	$(".marketplace").show()	
+}
+
 function loadDropdowns() {
-	for (arrayIndex in bizSpecialty) {
+	for (arrayIndex in supplyProducts) {
 		$(".searchDropdownSpecialty").append(
 			`
-			<li class="dropdown${removeSpaceForClassName(bizSpecialty[arrayIndex])}"><a href="#">${bizSpecialty[arrayIndex]}</a></li>
+			<li class="dropdown${removeSpaceForClassName(supplyProducts[arrayIndex])}"><a href="#">${supplyProducts[arrayIndex]}</a></li>
 			`
 		)
 	}

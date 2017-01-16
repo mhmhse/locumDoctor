@@ -1,0 +1,133 @@
+.marketDemandPost {
+	width: 530px;
+	height: 530px;
+	border-color: #AAD4E2;
+	border-width: 1px;
+	border-style: solid;
+	float: left;
+	margin: 10px;
+}
+
+.marketSupplyPostFirstRow {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #AAD4E2;
+	width: 100%;
+	overflow: auto;
+}
+
+.marketSupplyDateLeft {
+	float: left;
+	margin: 5px 0 5px 20px;
+}
+
+.marketSupplyDateRight {
+	float: right;
+	margin: 5px 20px 5px 0; 
+}
+
+.marketSupplyPostSecondRow {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #AAD4E2;
+	width: 100%;
+	overflow: auto;
+}
+
+.marketSupplyPhotoLeft {
+	width: 50%;
+	height: 150px;
+	float: left;
+}
+
+.marketSupplyPhotoRight {
+	width: 50%;
+	height: 150px;
+	float: left;
+}
+
+.marketSupplyInfoLeft {
+	width: 65%;
+	height: 345px;
+	padding: 20px;
+	float: left;
+}
+
+.marketSupplyInfoRight {
+	width: 35%;
+	height: 300px;
+	margin-top: 20px;
+	float: left;
+	font-size: 20px;
+	text-align: center;
+	border-left-width: 1px;
+	border-left-color: #AAD4E2;
+	border-left-style: solid;
+}
+
+.marketSupplyInfoSpecialty {
+	font-size: 40px;
+	margin-top: 20px;
+}
+
+.marketSupplyInfoInstitutionName {
+	font-size: 15px;
+	margin-top: 30px;
+}
+
+.marketSupplyInfoTravelLocation {
+	font-size: 15px;
+}
+
+.marketSupplyInfoTravelPolicy {
+	font-size: 15px;
+	margin-top: 30px;
+}
+
+.marketSupplyInfoInstitutionDesc {
+	font-size: 15px;
+	margin-top: 30px;
+	width: 280px;
+	overflow: auto;
+}
+
+.eigtyFiveCharcters {
+	float: left;
+}
+
+.descMoreInfo {
+	float: right;
+}
+
+.marketSupplyInfoDuration {
+	width: 100%;
+	height: 65px;
+	padding: 10px 0 10px 0;
+}
+
+.marketSupplyInfoTotalHours {
+	width: 100%;
+	height: 65px;
+	padding: 10px 0 10px 0;
+}
+
+.marketSupplyInfoRates {
+	width: 100%;
+	height: 95px;
+	padding: 10px 0 0 0;
+}
+
+.marketSupplyInfoOvertimeRates{
+	font-size: 15px;
+	color: grey;
+}
+
+.marketSupplyInfoTotalIncome {
+	width: 100%;
+	height: 95px;
+	padding: 10px 0 0 0;
+}
+
+
+
+

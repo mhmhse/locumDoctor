@@ -1,5 +1,8 @@
-var bizSpecialty = ["Dental Hygenists", "Registered Nurses", "APRNs", "Dentists", "Emergency Room Nurses", "Brain Surgeons", "General Practicioners", "Anestheiologists", "Pharmacists", "Office Assistants"]
-bizSpecialty.sort()
+var supplyProducts = ["Dental Hygenists", "Registered Nurses", "APRNs", "Dentists", "Emergency Room Nurses", "Brain Surgeons", "General Practicioners", "Anestheiologists", "Pharmacists", "Office Assistants"]
+supplyProducts.sort()
+
+var demandProducts = ["Nurse Practicioners", "Dentists"]
+demandProducts.sort()
 
 var bizLocation = ["All US", "NewYork", "Texas", "Washington State", "Washington D.C.", "Maryland", "Florida"]
 bizLocation.sort()
