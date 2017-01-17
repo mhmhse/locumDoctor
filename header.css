@@ -15,10 +15,12 @@
 
 .navbarOptionCoverLeft {
 	float: left;
+	cursor: pointer;
 }
 
 .navbarOptionCoverRight {
 	float: right;
+	cursor: pointer;
 }
 
 .navbarOptionCover {
@@ -26,17 +28,24 @@
 	overflow: auto;
 }
 
-.navbarOption {
+.navbarOptionLeft {
 	float: left;
 	margin: 0 0 0 0;
 	padding: 0 1% 0 1%;
 	text-align: center;
 	display: table-cell;
-	width: 100px;
-	color: whitesmoke !important;
-
+	width: 120px;
+	color: white;
+	font-size: 18px;
 }
 
-.navbarOption:hover {
-	cursor: hand;
+.navbarOptionRight {
+	float: left;
+	margin: 0 0 0 0;
+	padding: 0 1% 0 1%;
+	text-align: center;
+	display: table-cell;
+	width: 80px;
+	color: white;
+	font-size: 18px;
 }

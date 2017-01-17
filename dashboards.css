@@ -20,6 +20,7 @@
 	border-color: #AAD4E2;
 	border-width: 1px;
 	display: table;
+	cursor: pointer;
 }
 
 .rowBox p{
@@ -38,3 +39,4 @@
 	width: 100%;
 	overflow: auto;
 }
+

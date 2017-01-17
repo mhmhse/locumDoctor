@@ -1,7 +1,7 @@
 var supplyProducts = ["Dental Hygenists", "Registered Nurses", "APRNs", "Dentists", "Emergency Room Nurses", "Brain Surgeons", "General Practicioners", "Anestheiologists", "Pharmacists", "Office Assistants"]
 supplyProducts.sort()
 
-var demandProducts = ["Nurse Practicioners", "Dentists"]
+var demandProducts = ["Nurse Practicioner", "Dentist", "Dental Hygenist", "APRN"]
 demandProducts.sort()
 
 var bizLocation = ["All US", "NewYork", "Texas", "Washington State", "Washington D.C.", "Maryland", "Florida"]

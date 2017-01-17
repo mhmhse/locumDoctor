@@ -4,14 +4,15 @@ $(document).ready(function(){
 	<div class="navbarOptionCover">
 		<div class="navbarOptionCoverLeft">
 			<div class="navbarLogo">
-				<a class="navbarOption" onclick="approach()">Our Approach</a>
+				<a class="navbarOptionLeft" onclick="approach()">How it works?</a>
+				<a class="navbarOptionLeft" onclick="approach()">Our Mission</a>
 			</div>
 		</div>
 
 		<div class="navbarOptionCoverRight">
-			<a class="navbarOption" onclick="signUp()">Help</a>
-			<a class="navbarOption" onclick="signUp()">Sign Up</a>
-			<a class="navbarOption" onclick="signin()">Sign In</a>
+			<a class="navbarOptionRight" onclick="signUp()">Help</a>
+			<a class="navbarOptionRight" onclick="signUp()">Sign Up</a>
+			<a class="navbarOptionRight" onclick="signin()">Sign In</a>
 		</div>
 	</div>
 	`

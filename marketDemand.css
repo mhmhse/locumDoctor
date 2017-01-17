@@ -17,10 +17,10 @@
 }
 
 .marketplaceContentsCover {
-	width: 83%;
+	width: 85%;
 	min-width: 400px;
 	overflow: auto;
-	margin: 50px auto 0 auto;
+	margin: 50px auto 0 10%;
 }
 
 /*supply side*/

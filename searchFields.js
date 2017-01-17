@@ -9,6 +9,11 @@ function fetchInstitutionsSearch() {
 
 $(document).ready(function(){ 
 	loadDropdowns();
+
+	setTimeout(function(){
+		$(".frontPageButtonWrapperLeft").focus()
+	}, 500)
+
 })
 
 
