@@ -1,7 +1,13 @@
 function goToSearchSection() {
 	$(".marketplace").hide()
 	$(".frontPage").show()
-	console.log("go to search clicked")
+
+	lookingForJobs()
+
+	setTimeout(function(){
+		$(".frontPageButtonWrapperLeft").focus()
+	}, 500)
+
 }
 
 $(document).ready(function() { 
@@ -57,7 +63,6 @@ $(document).ready(function() {
 			$(".iconLegend").empty()
 		}
 	)
-
 
 	$(".clinicianRatesReplaceOnHover").hover(
 		function() {

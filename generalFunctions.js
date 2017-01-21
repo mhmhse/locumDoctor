@@ -1,13 +1,11 @@
 function lookingForJobs() {
 	$(".supplyBoard").hide();
 	$(".demandBoard").show()
-
 }
 
 function lookingForPeople() {
 	$(".demandBoard").hide()
 	$(".supplyBoard").show();
-	
 }
 
 function removeSpaceForClassName (array) {
