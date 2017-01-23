@@ -1,174 +1,505 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<style>	
+<head>
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title></title>
+    <style text="text/javascript">
+    	body {
+    		font-family: proxima-nova, sans-serif;
+    		height: 100%;
+    		width: 100%;
+    		background-color: #01A8EC;
+    		-webkit-font-smoothing: antialiased;
+    	}
 
-			body {
-				font-family: proxima-nova, sans-serif;
-			}
+    	.introQuote {
+    		text-align: center;
+    		font-size: 35px;
+    		margin: 20% auto 400px auto;
+    		color: white;
+    		font-weight: 600;
+    		line-height: 2;
+    	}
 
-			.jobPostDetailBoxContainer {
-				width: 1200px;
-				overflow: auto;
-				margin: 30px auto 30px auto;
-				border-style: solid;
-				border-width: 1px;
-				border-color: #aad4e2;
-			}
+    	.introArrow {
+    		color: white;
+    		position: fixed;
+    		bottom: 5%;
+    		left: 50%;
+            font-size: 25px;
+    	}
 
-			.jobPostPhotos {
-				width: 100%;
-				height: 400px;
-				overflow: hidden;
-			}
+    	.introDetailsContianer {
+    		width: 100%;
+    		overflow: auto;
+    		background-color: white;
+    		-webkit-font-smoothing: antialiased;
+    		color: #777776;
+    		text-align: center;
+    		font-weight: 600;
+    		line-height: 2;
+    	}
 
-			.jobPostPhoto {
-				width: 100%;
-				height: 600px;
-				float: left;
-			}
+    	.introDetailsTextArea {
+    		font-size: 35px;
+    		width: 60%;
+    		margin: 0 auto 0 auto;
+    		padding-top: 150px;
+    	}
 
-			.jobPostNavBarOutput {
-				border-right-style: solid;
-				border-right-color: #aad4e2;
-				border-right-width: 1px;
-			}
+    	.forCliniciansInfo {
+    		height: 1000px;
+    		padding-top: 200px;
+    	}
 
-			.jobPostDetailsBox1 {
-				float: left;
-				width: 700px;
-				height: 600px;
-				padding: 50px;
-			}
+    	.introDetailHeader {
+            width: 50%;
+            overflow: auto;
+    		font-size: 35px;
+            margin: 0 auto 0 auto;
+            padding-top: 50px;
+            border-top-style: solid;
+            border-top-width: 1px;
+            border-color: #F2F2F2;
+    	}
 
-			.jobPostDetailsBox2 {
-				float: left;
-				width: 360px;
-				height: 600px;
-				padding: 20px;
-			}
+        .forCliniciansInfoRow {
+            width: 50%;
+            overflow: auto;
+            margin: 50px auto 0 auto;
+            text-align: left;
+        }
 
-			.jobPostDetailsBox2 iframe {
-				width: 360px;
-				height: 240px;
-			}
+        .forCliniciansLeft {
+            float: left;
+            width: 20%;
+        }
 
-			.jobPostDetailsBox2 img {
-				width: 360px;
-				height: 240px;
-				margin-top: 10px;
-			}
+        .forCliniciansRight {
+            float: left;
+            width: 60%;
+            margin-left: 20%;
+        }
 
-			.jobPostNavBar {
-				width: 560px;
-				overflow: auto;
-				margin: 0 auto 30px auto;
-			}
+        .clinicSavings {
+            width: 80%;
+            height: 500px;
+            margin: 0 auto 0 auto;
+        }
 
-			.jobPostNavBar a {
-				width: 100px;
-				overflow: auto;
-				margin: 20px;
-				text-align: center;
-			}
+        .clinicianSavingsRow {
+            width: 100%;
+            overflow: auto;
+        }
 
-			.township {
-				font-size: 20px;
-			}
+        .brokerCost {
+            float: left;
+            width: 50%;
+            overflow: auto;
+            margin: 20px auto 0 auto;
+            padding: 0 50px 0 50px;
+        }
 
-			.townshipDescription {
-				margin-top: 10px;
-			}
+        .orchardCost {
+            float: left;
+            width: 50%;
+            overflow: auto;
+            margin: 20px auto 0 auto;
+            padding: 0 50px 0 50px;
+            border-left-style: solid;
+            border-left-width: 1px;
+            border-color: #AAD4E2;
+        }
 
-			.townshipActivities {
-				margin-top: 10px;
-			}
+        .costRow {
+            width: 100%;
+            overflow: auto;
+            margin-top: 10px;
+        }
 
-			.field1 {
-				width: 560px;
-				overflow: auto;
-				margin: 0 auto 0 auto;
-			}
+        .costShowDesc {
+            float: left;
+            width: 50%;
+            overflow: auto;
+            text-align: left;
+            margin-right: 0;
+        }
 
-			.townshipPhoto {
-				width: 20%;
-				overflow: auto;
-				float: left;
-				margin-left: 50px;
-			}
+        .costHourOutput {
+            float: left;
+            width: 50%;
+            overflow: auto;
+            text-align: right;
+        }
 
-			.townshipColumn2 {
-				width: 65%;
-				overflow: auto;
-				float: left;
-				margin: 10px 0 0 4%;
-			}
+        .costSlider {
+            margin-top: 10px;
+        }
 
-			.field2 {
-				text-align: center;
-				margin: 10px;
-			}
+        #broakerFee {
+            border-bottom-style: solid;
+            border-bottom-width: 1px;
+            border-bottom-color: #F2F2F2;
+            padding-bottom: 20px;
+        }
 
-			.field3 {
-				width: 560px;
-				overflow: auto;
-				margin: 30px 60px 0 60px;
-				line-height: 2;
-			}
+        .costShowTotalFee {
+            font-size: 20px;
+            width: 50%;
+            float: left;
+        }
 
-			.neighborhoodPhoto {
-				width: 100px;
-				height: 100px;
-				border-radius: 100%;
-			}
+        .costShowTotalFeeLeft {
+            text-align: left;
+        }
 
-		</style>
-	</head>
-	<body>
+        .costShowTotalFeeRight {
+            text-align: right;
+        }
 
-		 <div class="jobPostDetailBoxContainer">
-		 	<div class="jobPostPhotos">
-		 		<img src="mayo2.jpg" class="jobPostPhoto">
-		 	</div>
+        .totalPerHourCostLeft {
+            text-align: left;
+            width: 50%;
+            float: left;
+        }
 
-			<div class="jobPostDetailsBox1">
-				<div class="jobPostNavBar">
-					<a class="jobPostNav">Neighborhood</a>
-					<a class="jobPostNav">Clinic</a>
-					<a class="jobPostNav">Qualifications</a>
-					<a class="jobPostNav">Payments</a>
-				</div>
-				<div class="jobPostNavBarOutput">
-					<div class="field1">
-						<div class="townshipPhoto">
-							<img src="millbrook.jpg" class="neighborhoodPhoto">
-						</div>
-						<div class="townshipColumn2">
-							<div class="township">
-								Millbrook, New York
-							</div>
-							<div class="townshipDescription">
-								1.5h Drive from New York City
-							</div>
-							<div class="townshipActivities">
-								Rural | Farms | Golf | Hiking 
-							</div>
-						</div>
-					</div>
+        .totalPerHourCostRight {
+            text-align: right;
+            width: 50%;
+            float: left;
+        }
 
-					<div class="field3">
-						Millbrook is a village in Dutchess County, New York, United States. Millbrook is located in the Hudson Valley, on the east side of the Hudson River, 90 miles (140 km) north of New York City. Millbrook is near the center of the Town of Washington. As of the 2010 Census, Millbrook's population was 1,452. It is often referred to as a low-key version of the Hamptons and is one of the most affluent towns in New York State.
+        .totalHoursDesc {
+            width: 40%;
+            float: left;
+            text-align: left;
+        }
 
-						Millbrook is part of the Poughkeepsie–Newburgh–Middletown Metropolitan Statistical Area as well as the larger New York–Newark–Bridgeport Combined Statistical Area.
-					</div>
-				</div>
-			</div>
+        .totalHoursOutput {
+            width: 60%;
+            float: left;
+            text-align: right;
+        }
 
-			<div class="jobPostDetailsBox2">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11899.649301354308!2d-73.70620570838632!3d41.78710311712066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89dd6f205bd7234d%3A0x98794cc566e8984a!2sMillbrook%2C+NY+12545!5e0!3m2!1sen!2sus!4v1485031501141" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-				<img src="millbrook.jpg">
-			</div>				
+        .clinicianSavingsContent {
+            width: 60%;
+            overflow: auto;
+            margin: 30px auto 30px auto;
+        }
+
+        .clinicianSavingsFigures {
+            width: 100%;
+            overflow: auto;
+            margin: 30px auto 30px auto;
+        }
+
+        #orchardSaves {
+            font-size: 25px;
+            color: #01A8EC;
+            margin: 0 0 20px 0;
+        }
+        
+        .introBottomButton {
+            width: 200px;
+            overflow: auto;
+            margin-bottom: 20px;
+            background-color: #FF906E;
+        }
+
+        .introBottomButton:hover {
+            width: 200px;
+            overflow: auto;
+            margin-bottom: 20px;
+            background-color: #FF7D57;
+        }
+
+    </style>
+    <script>
+
+        var enteredCost = 150;
+        var enteredHour = 160;
+        var totalOrchardFeePerHour = 15;
+        var totalBrokerFeePerHour = 75;
+        var totalClinicianPay = 24000;
+        var totalSavings = 9600
+
+        function calcPaymentToClinician(enteredCost, enteredHour) {
+            var value = Math.ceil(enteredCost*enteredHour)
+            totalClinicianPay = value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }
+
+        function calcTotalOrchardServiceFee (enteredCost, enteredHour, commissionFactor) {
+            var value = Math.ceil(enteredCost*enteredHour*commissionFactor)
+            totalOrchardFee = value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }
+
+        function calcTotalOrchardFeePerHour (enteredCost, commissionFactor) {
+            var value = Math.ceil(enteredCost*(commissionFactor+1))
+            totalOrchardFeePerHour = value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }
+
+        function calcTotalOrchardCost (enteredCost, enteredHour, commissionFactor) {
+            var value = Math.ceil(enteredCost*enteredHour*(commissionFactor+1))
+            totalOrchardCost = value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }
+
+        function calcTotalBrokerServiceFee (enteredCost, enteredHour, commissionFactor) {
+            var value = Math.ceil(enteredCost*enteredHour*commissionFactor)
+            totalBrokerFee = value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }
+
+        function calcTotalBrokerFeePerHour (enteredCost, commissionFactor) {
+            var value = Math.ceil(enteredCost*(commissionFactor+1))
+            totalBrokerFeePerHour = value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }
+
+        function calcTotalBrokerCost (enteredCost, enteredHour, commissionFactor) {
+            var value = Math.ceil(enteredCost*enteredHour*(commissionFactor+1))
+            totalBrokerCost = value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }
+
+        function calcTotalSavings (enteredCost, enteredHour, brokerCommissionFactor, orchardCommissionFactor) {
+            var value = Math.ceil(enteredCost*enteredHour*(brokerCommissionFactor-orchardCommissionFactor))
+            totalSavings = value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }
+
+        function orchardCostChanged() {
+            enteredCost = $("#costInput").val();
+            $("#costShow").text("$"+enteredCost+"/hr")
+
+            calcPaymentToClinician(enteredCost, enteredHour)
+            calcTotalOrchardServiceFee(enteredCost, enteredHour, 0.1)
+            calcTotalOrchardFeePerHour (enteredCost, 0.1)
+            calcTotalOrchardCost (enteredCost, enteredHour, 0.1)
+            calcTotalBrokerServiceFee(enteredCost, enteredHour, 0.5)
+            calcTotalBrokerFeePerHour (enteredCost, 0.5)
+            calcTotalBrokerCost (enteredCost, enteredHour, 0.5)
+            calcTotalSavings(enteredCost, enteredHour, 0.5, 0.1)
+
+            $("#orchardPayToClinician").text("$"+totalClinicianPay)
+            $("#totalOrchardFee").text("$"+totalOrchardFee)    
+            $("#totalOrchardFeePerHour").text("$"+totalOrchardFeePerHour)
+            $("#totalOrchardCost").text("$"+totalOrchardCost)
+            $("#brokerPayToClinician").text("$"+totalClinicianPay)
+            $("#totalBrokerFee").text("$"+totalBrokerFee)    
+            $("#totalBrokerFeePerHour").text("$"+totalBrokerFeePerHour)
+            $("#totalBrokerCost").text("$"+totalBrokerCost)
+            $("#orchardSaves").text("$"+totalSavings+" Savings")
+        }
+
+        function orchardHourChanged() {
+            enteredHour = $("#hourInput").val();
+            $("#hourShow").text(enteredHour+"hrs ("+Math.ceil(enteredHour/40)+"weeks)")
+            
+            calcPaymentToClinician(enteredCost, enteredHour)
+            calcTotalOrchardServiceFee(enteredCost, enteredHour, 0.1)
+            calcTotalOrchardFeePerHour (enteredCost, 0.1)
+            calcTotalOrchardCost (enteredCost, enteredHour, 0.1)
+            calcTotalBrokerServiceFee(enteredCost, enteredHour, 0.5)
+            calcTotalBrokerFeePerHour (enteredCost, 0.5)
+            calcTotalBrokerCost (enteredCost, enteredHour, 0.5)
+            calcTotalSavings(enteredCost, enteredHour, 0.5, 0.1)
+
+            $("#orchardPayToClinician").text("$"+totalClinicianPay)
+            $("#totalOrchardFee").text("$"+totalOrchardFee)    
+            $("#totalOrchardFeePerHour").text("$"+totalOrchardFeePerHour)
+            $("#totalOrchardCost").text("$"+totalOrchardCost)
+            $("#brokerPayToClinician").text("$"+totalClinicianPay)
+            $("#totalBrokerFee").text("$"+totalBrokerFee)    
+            $("#totalBrokerFeePerHour").text("$"+totalBrokerFeePerHour)
+            $("#totalBrokerCost").text("$"+totalBrokerCost)
+            $("#orchardSaves").text("$"+totalSavings+" Savings")
+        }
+        
+    </script>
+</head>
+<body>
+	<div class="introQuote">
+		Making freelance clinical work easy.</br>That's us. That's all we think about.
+	</div>
+
+	<div class="introArrow">
+		<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+	</div>
+
+	<div class="introDetailsContianer">
+		<div class="introDetailsTextArea">
+			Orchard replaces the traditional broker model for staffing with an elegant marketplace. We empower clinicians to earn premium wages whenever and wherever they want.
 		</div>
 
-	</body>
+		<div class="forCliniciansInfo">
+
+            <div class="introDetailHeader">
+                For Clinicians
+            </div>
+
+            <div class="forCliniciansInfoRow">
+                <div class="forCliniciansLeft">
+                    ICON<br>
+                    Make sure to make it fade in
+                </div>
+                <div class="forCliniciansRight">
+
+                    <div class="introSubheader">
+                        Choose when you work! 
+                    </div>
+
+                    <div class="introTopic">
+                        Set the dates & hours you’d like to work<br>Be flexible and see what opportunities are out there waiting for you.
+                    </div>
+                </div>
+            </div>
+
+            <div class="forCliniciansInfoRow">
+                <div class="forCliniciansLeft">
+                    ICON
+                </div>
+                <div class="forCliniciansRight">
+
+                    <div class="introSubheader">
+                        Choose where you work! 
+                    </div>
+
+                    <div class="introTopic">
+                        We operate in xyz.xyz<br>
+                        And will book housing & travel free of charge.
+
+                    </div>
+                </div>
+            </div>
+
+		</div>
+
+        <div class="forCliniciansInfo">
+
+            <div class="introDetailHeader">
+                For Institutions
+            </div>
+
+            <div class="forCliniciansInfoRow">
+                <div class="forCliniciansLeft">
+                    ICON<br>
+                    Make sure to make it fade in
+                </div>
+                <div class="forCliniciansRight">
+
+                    <div class="introSubheader">
+                        Choose when you work! 
+                    </div>
+
+                    <div class="introTopic">
+                        Set the dates & hours you’d like to work<br>Be flexible and see what opportunities are out there waiting for you.
+                    </div>
+                </div>
+            </div>
+
+            <div class="forCliniciansInfoRow">
+                <div class="forCliniciansLeft">
+                    ICON
+                </div>
+                <div class="forCliniciansRight">
+
+                    <div class="introSubheader">
+                        Choose where you work! 
+                    </div>
+
+                    <div class="introTopic">
+                        We operate in xyz.xyz<br>
+                        And will book housing & travel free of charge.
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" class="btn btn-default btn-md">
+              See Our Jobs
+            </button>
+
+        </div>
+
+        <div class="clinicSavings">
+            
+            <div class="clinicianSavingsRow">
+                <div class="clinicianSavingsContent">
+                    <div class="costRow">
+                        <div class="costShowDesc">Per Hour Fee</div>
+                        <div id="costShow" class="costHourOutput">$150/hr</div>
+                    </div>
+                    <input id="costInput" class="costSlider" type="range" name="points" min="40" max="400" value="150" onchange="orchardCostChanged()"> 
+
+                    <div class="costRow">
+                        <div class="totalHoursDesc">Total Hours</div>
+                        <div id="hourShow" class="totalHoursOutput">160hrs (4weeks)</div>
+                    </div>
+                    <input id="hourInput" class="costSlider" type="range" name="points" min="40" max="480" value="160" onchange="orchardHourChanged()">
+                </div>
+            </div>
+
+            <div class="clinicianSavingsRow">
+                <div class="clinicianSavingsFigures">
+
+                    <div class="brokerCost">
+                        <div class="orchardCostHeader">
+                            Traditional Staffing Brokers
+                        </div>
+
+                        <div class="costRow" id="broakerFee">
+                            <div class="costShowDesc">Payment to Clinician</div>
+                            <div id="brokerPayToClinician" class="costHourOutput">$12,000</div>
+                        </div>
+
+                        <div class="costRow" id="broakerFee">
+                            <div class="costShowDesc">Broker Service Fee (50%)</div>
+                            <div id="totalBrokerFee" class="costHourOutput">$6,000</div>
+                        </div>
+
+                        <div class="costRow">
+                            <div class="totalPerHourCostLeft">Total Per Hour Cost</div>
+                            <div id="totalBrokerFeePerHour" class="totalPerHourCostRight">$225/hr</div>
+                        </div>
+
+                        <div class="costRow">
+                            <div class="costShowTotalFee costShowTotalFeeLeft">Total Cost</div>
+                            <div id="totalBrokerCost" class="costShowTotalFee costShowTotalFeeRight">$36,000</div>
+                        </div>
+
+                    </div>
+
+                    <div class="orchardCost">
+                        <div class="orchardCostHeader">
+                            Orchard's Cost
+                        </div>
+
+                        <div class="costRow" id="broakerFee">
+                            <div class="costShowDesc">Payment to Clinician</div>
+                            <div id="orchardPayToClinician" class="costHourOutput">$12,000</div>
+                        </div>
+
+                        <div class="costRow" id="broakerFee">
+                            <div class="costShowDesc">Orchard Service Fee (10%)</div>
+                            <div id="totalOrchardFee" class="costHourOutput">$1,200</div>
+                        </div>
+                        <div class="costRow">
+                            <div class="totalPerHourCostLeft">Total Per Hour Cost</div>
+                            <div id="totalOrchardFeePerHour" class="totalPerHourCostRight">$165/hr</div>
+                        </div>
+                        <div class="costRow">
+                            <div class="costShowTotalFee costShowTotalFeeLeft">Total Cost</div>
+                            <div id="totalOrchardCost" class="costShowTotalFee costShowTotalFeeRight">$26,400</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="clinicianSavingsRow">
+                <div id="orchardSaves">$9,600 Savings</div>
+                <button type="button" class="btn btn-default btn-md introBottomButton">
+                  See Our Talents
+                </button>
+            </div>
+        </div>
+	</div>
+
+</div>
+</body>
 </html>
