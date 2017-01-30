@@ -4,8 +4,9 @@ $(document).ready(function(){
 	<div class="navbarOptionCover">
 		<div class="navbarOptionCoverLeft">
 			<div class="navbarLogo">
+				<div class="navbarOptionLeftCompanyLogo"></div>
+				<a class="navbarOptionLeft" onclick="approach()">Orchard</a>
 				<a class="navbarOptionLeft" onclick="approach()">How it works?</a>
-				<a class="navbarOptionLeft" onclick="approach()">Our Mission</a>
 			</div>
 		</div>
 

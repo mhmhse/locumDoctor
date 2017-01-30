@@ -13,7 +13,6 @@ $(document).ready(function(){
 	setTimeout(function(){
 		$(".frontPageButtonWrapperLeft").focus()
 	}, 500)
-
 })
 
 

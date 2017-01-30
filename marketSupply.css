@@ -128,6 +128,18 @@
 	padding: 10px 0 0 0;
 }
 
+.frontPageScrollDownArrow {
+	position: absolute;
+    bottom: 5vh;
+    left: calc(50vw - 7px);
+    width: 14px;
+    text-align: center;
+    animation: blinker 3s linear infinite;
+}
+
+@keyframes blinker {  
+  50% { opacity: 0; }
+}
 
 
 

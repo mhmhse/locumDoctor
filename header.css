@@ -1,11 +1,12 @@
 .navbar {
 	background-color: #00A7F2;
 	margin-bottom: 0px !important;
+	height: 5vh;
 }
 
 .navbarContent {
-	width: 90%;
-	height: 30px;
+	width: 90vw;
+	overflow: auto;
 	margin: 10px auto 0 auto;
 	padding: 0 auto 0 auto;
 	display: table;
@@ -14,6 +15,7 @@
 .navbarOptionCoverLeft {
 	float: left;
 	cursor: pointer;
+	width: 400px;
 }
 
 .navbarOptionCoverRight {
@@ -26,15 +28,28 @@
 	overflow: auto;
 }
 
+.navbarLogo {
+	width: 400px;
+	overflow: auto;
+}
+
 .navbarOptionLeft {
 	float: left;
-	margin: 0 0 0 0;
-	padding: 0 1% 0 1%;
+	margin: 2px 0px 0px 20px;
+	padding: 0 0 0 1%;
 	text-align: center;
 	display: table-cell;
-	width: 120px;
+	width: auto;
 	color: white;
 	font-size: 18px;
+}
+
+.navbarOptionLeftCompanyLogo {
+	width: 25px;
+	height: 25px;
+	background-image: url("whiteLogo.png");
+	float: left;
+	background-size: contain;
 }
 
 .navbarOptionRight {
