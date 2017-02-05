@@ -1,3 +1,10 @@
+function showOnlyHowItWorks() {
+	$(".searchFields").hide()
+	$(".dashboards").hide()
+}
+
+
+
 $(document).ready(function(){ 
 	$(".navbarContent").append(
 	`
@@ -6,7 +13,7 @@ $(document).ready(function(){
 			<div class="navbarLogo">
 				<div class="navbarOptionLeftCompanyLogo"></div>
 				<a class="navbarOptionLeft" onclick="approach()">Orchard</a>
-				<a class="navbarOptionLeft" onclick="approach()">How it works?</a>
+				<a class="navbarOptionLeft" onclick="showOnlyHowItWorks()">How it Works</a>
 			</div>
 		</div>
 

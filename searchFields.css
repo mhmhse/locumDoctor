@@ -132,7 +132,8 @@ body {
 
 .searchFields {
 	width: 100vw;
-	height: 95vh;
+	height: 100vh;
+	padding-top: 5vh;
 	
 /*	background-image: url("stockphoto.png");*/
 }
@@ -160,7 +161,7 @@ body {
 	font-size: 20px;
 }
 
-.selectionCheckBox {
+.selectionCheckBoxUnselected {
     height: 35px;
     width: 140px;
     float: left;
@@ -173,6 +174,83 @@ body {
     font-weight: 600;
 	margin: 3px 5px 10px 5px;
     padding-top: 1px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.selectionCheckBoxUnselected:hover {
+	height: 35px;
+    width: 140px;
+    float: left;
+    border-radius: 20px;
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+    text-align: center;
+    font-weight: 600;
+    margin: 3px 5px 10px 5px;
+    padding-top: 1px;
+    text-align: center;
+    background-color: white;
+    color: #00A7F2;
+    cursor: pointer;
+}
+
+.frontPageSelectionButton {
+	float: left;
+}
+
+.frontPageSelectionLabel {
+	float: left;
+}
+
+.selectionClinicCover {
+	width: 70px;
+	overflow: auto;
+	text-align: auto;
+	margin: 0 auto;
+}
+
+.selectionClinicianCover {
+	width: 100px;
+	overflow: auto;
+	text-align: auto;
+	margin: 0 auto;
+}
+
+.selectionCheckBoxSelected {
+    height: 35px;
+    width: 140px;
+    float: left;
+    border-radius: 20px;
+    border-color: white;
+    color: white;
+    border-style: solid;
+    border-width: 2px;
+    text-align: center;
+    font-weight: 600;
+	margin: 3px 5px 10px 5px;
+    padding-top: 1px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.selectionCheckBoxSelected:hover {
+	height: 35px;
+    width: 140px;
+    float: left;
+    border-radius: 20px;
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+    text-align: center;
+    font-weight: 600;
+    margin: 3px 5px 10px 5px;
+    padding-top: 1px;
+    text-align: center;
+    background-color: white;
+    color: #00A7F2;
+    cursor: pointer;
 }
 
 .clinicianClinicButtonCover {

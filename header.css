@@ -1,7 +1,16 @@
+body {
+	overflow-x: hidden !important;
+}
+
 .navbar {
 	background-color: #00A7F2;
 	margin-bottom: 0px !important;
+	border-radius: 0px !important;
+	position: fixed;
+	width: 100vw;
 	height: 5vh;
+	z-index: 1;
+	position: fixed !important;
 }
 
 .navbarContent {

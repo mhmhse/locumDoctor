@@ -1,11 +1,28 @@
 function lookingForJobs() {
 	$(".supplyBoard").hide();
-	$(".demandBoard").show()
+	$(".demandBoard").show();
+
+	$(".clinicianCheckbox").append(
+		`
+		<span class=" glyphicon glyphicon glyphicon-ok" aria-hidden="true"></span>
+		`
+	)
+
+	$(".clinicCheckbox").empty()
+
 }
 
 function lookingForPeople() {
-	$(".demandBoard").hide()
+	$(".demandBoard").hide();
 	$(".supplyBoard").show();
+
+	$(".clinicCheckbox").append(
+		`
+		<span class=" glyphicon glyphicon glyphicon-ok" aria-hidden="true"></span>
+		`
+	)
+
+	$(".clinicianCheckbox").empty()
 }
 
 function removeSpaceForClassName (array) {

@@ -1,1 +1,243 @@
-howItWorks.css
+.introQuote {
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    font-weight: 600;
+    line-height: 2;
+    height: 95vh;
+    padding-top: 35vh;
+}
+
+.introArrow {
+	color: white;
+	position: fixed;
+	bottom: 5%;
+	left: 50%;
+    font-size: 25px;
+}
+
+.introSubheader {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.introDetailsContianer {
+	width: 100%;
+	background-color: white;
+	-webkit-font-smoothing: antialiased;
+	color: #777776;
+	text-align: center;
+	font-weight: 600;
+	line-height: 2;
+}
+
+.introDetailsTextArea {
+    font-size: 35px;
+    width: 60%;
+    height: 95vh;
+    margin: 0 auto 0 auto;
+    padding-top: 200px;
+    color: #00A7F2;
+}
+
+.forCliniciansInfo {
+	overflow: auto;
+}
+
+.introDetailHeader {
+    width: 50%;
+    overflow: auto;
+    font-size: 35px;
+    margin: 0 auto 0 auto;
+    padding-top: 50px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-color: #00a7f2;
+    color: #00a7f2;
+}
+
+.forCliniciansInfoRow {
+    width: 50%;
+    overflow: auto;
+    margin: 50px auto 0 auto;
+    text-align: left;
+}
+
+.forCliniciansLeft {
+    float: left;
+    width: 20%;
+    font-size: 35px;
+    text-align: center;
+    padding-left: 12.4%;
+    padding-top: 5%;
+}
+
+.forCliniciansLeftThirdRow {
+    float: left;
+    width: 20%;
+    font-size: 35px;
+    text-align: center;
+    padding-left: 10%;
+}
+
+.forCliniciansRight {
+    float: left;
+    width: 60%;
+    margin-left: 20%;
+}
+
+.clinicSavings {
+    width: 80%;
+    overflow: auto;
+    margin: 10vh auto 0 auto;
+}
+
+.clinicianSavingsRow {
+    width: 100%;
+    overflow: auto;
+}
+
+.brokerCost {
+    float: left;
+    width: 50%;
+    overflow: auto;
+    margin: 20px auto 0 auto;
+    padding: 0 50px 0 50px;
+}
+
+.orchardCost {
+    float: left;
+    width: 50%;
+    overflow: auto;
+    margin: 20px auto 0 auto;
+    padding: 0 50px 0 50px;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-color: #AAD4E2;
+}
+
+.costRow {
+    width: 100%;
+    overflow: auto;
+    margin-top: 10px;
+}
+
+.costShowDesc {
+    float: left;
+    width: 50%;
+    overflow: auto;
+    text-align: left;
+    margin-right: 0;
+}
+
+.costHourOutput {
+    float: left;
+    width: 50%;
+    overflow: auto;
+    text-align: right;
+}
+
+.costSlider {
+    margin-top: 10px;
+}
+
+#broakerFee {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #F2F2F2;
+    padding-bottom: 20px;
+}
+
+.costShowTotalFee {
+    font-size: 20px;
+    width: 50%;
+    float: left;
+}
+
+.costShowTotalFeeLeft {
+    text-align: left;
+}
+
+.costShowTotalFeeRight {
+    text-align: right;
+}
+
+.totalPerHourCostLeft {
+    text-align: left;
+    width: 50%;
+    float: left;
+}
+
+.totalPerHourCostRight {
+    text-align: right;
+    width: 50%;
+    float: left;
+}
+
+.totalHoursDesc {
+    width: 40%;
+    float: left;
+    text-align: left;
+}
+
+.totalHoursOutput {
+    width: 60%;
+    float: left;
+    text-align: right;
+}
+
+.clinicianSavingsContent {
+    width: 60%;
+    overflow: auto;
+    margin: 30px auto 30px auto;
+}
+
+.clinicianSavingsFigures {
+    width: 100%;
+    overflow: auto;
+    margin: 30px auto 30px auto;
+}
+
+#orchardSaves {
+    font-size: 25px;
+    color: #01A8EC;
+    margin: 0 0 20px 0;
+}
+
+.introBottomButton {
+    width: 200px;
+    overflow: auto;
+    margin-bottom: 20px;
+    background-color: #FF906E;
+    border-color: #FC6028!important;
+    color: #FC6028 !important;
+}
+
+.introBottomButton:hover {
+    width: 200px;
+    overflow: auto;
+    margin-bottom: 20px;
+    background-color: #FC6028 !important;
+    color: white !important;
+
+}
+
+.forCliniciansLeftTopRow {
+    width: 90px;
+    height: 45px;
+    padding: 0 17.5px;
+}
+
+.forCliniciansLeftBottomRow {
+    width: 90px;
+    height: 45px;
+}
+
+.forCliniciansLeftBottomRowIcon {
+    float: left;
+}
+
+.buttonMargin {
+    margin-top: 5vh;
+    margin-bottom: 5vh !important;
+}

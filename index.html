@@ -27,6 +27,7 @@
 	<script src="loadingPage.js"></script>
 	<link rel="stylesheet" href="howItWorks.css" />
 	<script src="howItWorks.js"></script>
+
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 
@@ -68,8 +69,20 @@
 			<div class="clinicianClinicSelectionButton">
 				<div class="iAmA">I'm a</div>
 				<div class="clinicianClinicButtonCover">
-					<div class="selectionCheckBox" id="clinicianCheckBox" onClick="lookingForJobs()">clinician</div>
-					<div class="selectionCheckBox" id="clinicCheckBox" onClick="lookingForPeople()">clinic</div>
+					<div class="selectionCheckBoxSelected" id="clinicianCheckBox" onClick="lookingForJobs()">
+						<div class="selectionClinicianCover">
+							<div class="clinicianCheckbox">
+								<span class=" glyphicon glyphicon glyphicon-ok" aria-hidden="true"></span>
+							</div>
+							clinician
+						</div>
+					</div>
+					<div class="selectionCheckBoxUnselected" id="clinicCheckBox" onClick="lookingForPeople()">
+						<div class="selectionClinicCover">
+							<div class="clinicCheckbox"></div>
+							clinic
+						</div>
+					</div>
 				</div>
 			</div>
 			
@@ -157,14 +170,17 @@
 				</div> -->
 
 				<div class="demandBoard">
-					<p>I'm a...</p>
+					<p class="boardIntroText">our opportunities for clinicians like you...</p>
 				</div>
 
 				<div class="supplyBoard">
-					<p>I'm looking for...</p>
+					<p class="boardIntroText">I'm looking for...</p>
 				</div>
 
 			</div>
+		</div>
+
+		<div class="frontPageHowItWorks">
 		</div>
 
 	</div>

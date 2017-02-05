@@ -131,10 +131,11 @@
 .frontPageScrollDownArrow {
 	position: absolute;
     bottom: 5vh;
-    left: calc(50vw - 7px);
-    width: 14px;
+    left: calc(50vw - 13px);
+    width: 26px;
     text-align: center;
     animation: blinker 3s linear infinite;
+    font-size: 26px;
 }
 
 @keyframes blinker {  
