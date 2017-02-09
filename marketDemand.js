@@ -1,15 +1,3 @@
-function goToSearchSection() {
-	$(".marketplace").hide()
-	$(".frontPage").show()
-
-	lookingForJobs()
-
-	setTimeout(function(){
-		$(".frontPageButtonWrapperLeft").focus()
-	}, 500)
-
-}
-
 $(document).ready(function() { 
 
 	event.preventDefault()

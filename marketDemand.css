@@ -110,7 +110,6 @@
 
 .clinicianPostThirdRow {
 	color: black !important;
-	overflow: auto;
 	margin: 10px 0 0 0;
 }
 
@@ -194,7 +193,6 @@
 
 .clinicianRatesReplaceOnHover {
 	padding-top: 40px;
-	overflow: auto;
 }
 
 .fullTimeIcon {

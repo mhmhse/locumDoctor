@@ -1,4 +1,4 @@
-var supplyProducts = ["Dental Hygenists", "Registered Nurses", "APRNs", "Dentists", "Emergency Room Nurses", "Brain Surgeons", "General Practicioners", "Anestheiologists", "Pharmacists", "Office Assistants"]
+var supplyProducts = ["Dental Hygenists", "Registered Nurses", "APRNs", "Dentist", "Emergency Room Nurses", "Brain Surgeons", "General Practicioners", "Anestheiologists", "Pharmacists", "Office Assistants"]
 supplyProducts.sort()
 
 var demandProducts = ["Nurse Practicioner", "Dentist", "Dental Hygienist", "APRN"]
@@ -8,26 +8,6 @@ var bizLocation = ["All US", "NewYork", "Texas", "Washington State", "Washington
 bizLocation.sort()
 
 var bizDuration = ["1-2 Weeks", "2-4 Weeks", "1-3 Months", "3-6 Months", "6+ Months", "Permanent"]
-
-var presentPostings = [
-	{
-	Specialty: "Dentists",
-	SpecialtyBreakdown: "Dentist--Implant", 
-	Location: "Texas",
-	Duration: "1-2 Weeks", 
-	Flexible: "Yes",
-	DiscloseClientName: "Yes",
-	Client: "MD Anderson--Houston Center", 
-	ClientContact: "conrad.crassierer@mdanderson.com", 
-	Date: "March 15, 2016 - March 30, 2016", 
-	Experience: "5 Years", 
-	Qualifications: "DDS or DMD (Degrees or Certifications)", 
-	Rates: "130 per hour", 
-	NonLocalHousingAndPerDiem: "Yes; 250 per Day Limit",
-	InsuranceRequirements: "Malpractice--Hospital Covered",
-	InsuranceAccepted: "Aetna, Blue Cross, Oscar" 
-	}
-]
 
 var jobInventory = [
 	{
@@ -115,7 +95,7 @@ var jobInventory = [
 		specialNote: "Female Only"
 	},
 	{
-		product: "Nurse Practicioner",
+		product: "NursePracticioner",
 		productSpecialty: "Nurse Practicioner, Psychiatry",
 		degreeRequired: "NP",
 		desiredPriorExperience: "5",
@@ -143,7 +123,7 @@ var jobInventory = [
 		specialNote: "Female Only"
 	},
 	{
-		product: "Nurse Practicioner",
+		product: "NursePracticioner",
 		productSpecialty: "Nurse Practicioner, Psychiatry",
 		degreeRequired: "NP",
 		desiredPriorExperience: "5",
@@ -171,7 +151,7 @@ var jobInventory = [
 		specialNote: "Female Only"
 	},
 	{
-		product: "Nurse Practicioner",
+		product: "NursePracticioner",
 		productSpecialty: "Nurse Practicioner, Psychiatry",
 		degreeRequired: "NP",
 		desiredPriorExperience: "5",
@@ -199,7 +179,7 @@ var jobInventory = [
 		specialNote: "Female Only"
 	},
 	{
-		product: "Nurse Practicioner",
+		product: "NursePracticioner",
 		productSpecialty: "Nurse Practicioner, Psychiatry",
 		degreeRequired: "NP",
 		desiredPriorExperience: "5",
@@ -228,4 +208,120 @@ var jobInventory = [
 	}
 ]
 
-var cliniciansInventory = []
+var clinicianInventory = [
+	{
+		lastName: "Medicine",
+		firstName: "Joe",
+		title: "DDS",
+		product: "Dentist",
+		specialty: "Implants Specialist",
+		location: "Bethesda, MD",
+		experience: "5+",
+		fullTime: "Yes",
+		partTime: "Yes",
+		overTime: "Yes",
+		nightShift: "Yes",
+		onCall: "Yes",
+		traveling: "Yes",
+		schoolName: "University of Pennsylvania Dental School",
+		schoolClass: "05",
+		schoolType: "School of Dentistry",
+		residenceName: "Mayo Clinic",
+		residenceType: "Residence",
+		hospitalAffiliation: ["Mt. Sinai Medical Center", "Mayo Clinic"],
+		weeklyHours: "20-40",
+		wageExpectation: "80"
+	},
+	{
+		lastName: "Medicine",
+		firstName: "Kate",
+		title: "DMD",
+		product: "Dentist",
+		specialty: "Early Childhood Teeth Whitening",
+		experience: "5+",
+		location: "Weschester, NY",
+		fullTime: "Yes",
+		partTime: "Yes",
+		overTime: "Yes",
+		nightShift: "Yes",
+		onCall: "Yes",
+		traveling: "Yes",
+		schoolName: "University of Pennsylvania Dental School",
+		schoolClass: "05",
+		schoolType: "School of Dentistry",
+		residenceName: "Mayo Clinic",
+		residenceType: "Residence",
+		hospitalAffiliation: ["Mt. Sinai Medical Center", "Mayo Clinic"],
+		weeklyHours: "20-40",
+		wageExpectation: "80"
+	},
+	{
+		lastName: "Medicine",
+		firstName: "Sarah",
+		title: "MPSD",
+		product: "Cardiac Surgeon",
+		specialty: "Heart Transplant Special Surgeon",
+		experience: "5+",
+		location: "Brooklyn, NY",
+		fullTime: "Yes",
+		partTime: "Yes",
+		overTime: "Yes",
+		nightShift: "Yes",
+		onCall: "Yes",
+		traveling: "Yes",
+		schoolName: "University of Pittsburgh Dental School",
+		schoolClass: "05",
+		schoolType: "School of Dentistry",
+		residenceName: "Mayo Clinic",
+		residenceType: "Residence",
+		hospitalAffiliation: ["Mt. Sinai Medical Center", "Mayo Clinic"],
+		weeklyHours: "20-40",
+		wageExpectation: "80"
+	},
+	{
+		lastName: "Carson",
+		firstName: "Ben",
+		title: "MD",
+		product: "Dentist",
+		specialty: "Implants Specialist",
+		experience: "5+",
+		location: "Washington DC",
+		fullTime: "Yes",
+		partTime: "Yes",
+		overTime: "Yes",
+		nightShift: "Yes",
+		onCall: "Yes",
+		traveling: "Yes",
+		schoolName: "Johns Hopkins Medical School",
+		schoolClass: "05",
+		schoolType: "School of Internal Medicine",
+		residenceName: "Mayo Clinic",
+		residenceType: "Residence",
+		hospitalAffiliation: ["Mt. Sinai Medical Center", "Mayo Clinic"],
+		weeklyHours: "20-40",
+		wageExpectation: "80"
+	},
+	{
+		lastName: "Medicine",
+		firstName: "Joe",
+		title: "DDS",
+		product: "Dentist",
+		specialty: "Implants Specialist",
+		location: "Queens, NY",
+		experience: "5+",
+		fullTime: "Yes",
+		partTime: "Yes",
+		overTime: "Yes",
+		nightShift: "Yes",
+		onCall: "Yes",
+		traveling: "Yes",
+		schoolName: "University of Pennsylvania Dental School",
+		schoolClass: "05",
+		schoolType: "School of Dentistry",
+		residenceName: "Mayo Clinic",
+		residenceType: "Residence",
+		hospitalAffiliation: ["Mt. Sinai Medical Center", "Mayo Clinic"],
+		weeklyHours: "20-40",
+		wageExpectation: "80"
+	}
+]

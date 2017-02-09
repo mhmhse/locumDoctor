@@ -1,6 +1,36 @@
+function unHighlightHowItWorks() {
+	$(".howItWorksButton").css("color", "white");
+	$(".howItWorksButton").css("background-color", "#00A7F2");
+}
+
+function highlightOrchardButton() {
+	$(".orchardButton").css("background-color", "white");
+	$(".orchardButton").css("color", "#00A7F2");
+}
+
+function goToSearchSection() {
+	$(".marketplace").hide();
+	$(".navbarOptionCoverCenter").hide();
+	$(".frontPage").show();
+	$(".searchFields").show();
+	$(".dashboards").show();
+	lookingForJobs();
+	highlightOrchardButton();
+	unHighlightHowItWorks();
+
+	setTimeout(function(){
+		$(".frontPageButtonWrapperLeft").focus();
+	}, 500)
+
+}
+
 function lookingForJobs() {
 	$(".supplyBoard").hide();
 	$(".demandBoard").show();
+
+	//I am quickly adding this function in order to prevent duplicated check boxes. First it empties out any check box glyphicon that may exist there or not, and then add on the next line.
+
+	$(".clinicianCheckbox").empty()	
 
 	$(".clinicianCheckbox").append(
 		`
@@ -8,13 +38,20 @@ function lookingForJobs() {
 		`
 	)
 
+	//if the clinician box has ben checked, then the clinic box should be marked off. Simple.
+
 	$(".clinicCheckbox").empty()
 
 }
 
 function lookingForPeople() {
 	$(".demandBoard").hide();
+
+	//same idea but different direction compared to the codes above
+
 	$(".supplyBoard").show();
+
+	$(".clinicCheckbox").empty()
 
 	$(".clinicCheckbox").append(
 		`
@@ -34,6 +71,7 @@ function goToDemandMarketPlace() {
 	$(".marketSupplyPost").hide()
 	$(".marketDemandPost").show()
 	$(".marketplace").show()
+	$(".navbarOptionCoverCenter").show()
 }
 
 function goToSupplyMarketPlace() {
@@ -41,6 +79,7 @@ function goToSupplyMarketPlace() {
 	$(".marketDemandPost").hide()
 	$(".marketSupplyPost").show()
 	$(".marketplace").show()	
+	$(".navbarOptionCoverCenter").show()
 }
 
 function loadDropdowns() {

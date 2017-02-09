@@ -21,7 +21,7 @@ var enteredHour = 160;
 var totalOrchardFeePerHour = 15;
 var totalBrokerFeePerHour = 75;
 var totalClinicianPay = 24000;
-var totalSavings = 9600
+var totalSavings = 9600;
 
 function calcPaymentToClinician(enteredCost, enteredHour) {
     var value = Math.ceil(enteredCost*enteredHour)
@@ -111,7 +111,6 @@ function orchardHourChanged() {
     $("#orchardSaves").text("$"+totalSavings+" Savings")
 }
 
-
 $(document).ready(function(){  
 	console.log("working")
 	$(".frontPageHowItWorks").append(
@@ -192,7 +191,7 @@ $(document).ready(function(){
                 </div>
             </div>
             <button type="button" class="buttonMargin btn btn-default btn-md introBottomButton">
-            	See our Jobs
+            	See Open Positions
             </button>
 		</div>
 

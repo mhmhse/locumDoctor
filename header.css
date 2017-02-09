@@ -24,17 +24,17 @@ body {
 .navbarOptionCoverLeft {
 	float: left;
 	cursor: pointer;
-	width: 400px;
+	width: 41vw;
 }
 
 .navbarOptionCoverRight {
 	float: right;
 	cursor: pointer;
+	width: 300px;
 }
 
 .navbarOptionCover {
 	margin: 0 auto 0 auto;
-	overflow: auto;
 }
 
 .navbarLogo {
@@ -42,15 +42,47 @@ body {
 	overflow: auto;
 }
 
+.orchardButton {
+    color: white;   
+    background-color: #00A7F2;
+	float: left;
+    margin: 2px 0px 0px 20px;
+    padding: 0 3% 0 3%;
+    text-align: center;
+    display: table-cell;
+    width: auto;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
 .navbarOptionLeft {
 	float: left;
-	margin: 2px 0px 0px 20px;
-	padding: 0 0 0 1%;
-	text-align: center;
-	display: table-cell;
-	width: auto;
-	color: white;
-	font-size: 18px;
+    margin: 2px 0px 0px 20px;
+    padding: 0 3% 0 3%;
+    text-align: center;
+    display: table-cell;
+    width: auto;
+    color: white;
+    font-size: 18px;
+}
+
+.navbarOptionLeft:hover {
+	float: left;
+    margin: 2px 0px 0px 20px;
+    padding: 0 3% 0 3%;
+    text-align: center;
+    display: table-cell;
+    width: auto;
+    font-size: 18px;
+    color: #00A7F2;   
+    background-color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    -webkit-animation: fadein 0.5s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 0.5s; /* Firefox < 16 */
+    -ms-animation: fadein 0.5s; /* Internet Explorer */
+    -o-animation: fadein 0.5s; /* Opera < 12.1 */
+    animation: fadein 0.5s;  
 }
 
 .navbarOptionLeftCompanyLogo {
@@ -63,11 +95,66 @@ body {
 
 .navbarOptionRight {
 	float: left;
-	margin: 0 0 0 0;
-	padding: 0 1% 0 1%;
+	margin: 0;
+	padding: 0 2% 0 2%;
 	text-align: center;
-	display: table-cell;
-	width: 80px;
+/*	display: table-cell;*/
+	width: 100px;
 	color: white;
 	font-size: 18px;
+}
+
+.navbarOptionRight:hover {
+	float: left;
+	margin: 0;
+    padding: 0 2% 0 2%;
+    text-align: center;
+    width: 100px;
+    color: #00A7F2;
+    font-size: 18px;
+    background-color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    -webkit-animation: fadein 0.5s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 0.5s; /* Firefox < 16 */
+    -ms-animation: fadein 0.5s; /* Internet Explorer */
+    -o-animation: fadein 0.5s; /* Opera < 12.1 */
+    animation: fadein 0.5s;  
+}
+
+.navbarOptionCoverCenter {
+	width: 100px;
+	height: 35px;
+	font-size: 18px;
+	color: white;
+	float: left;
+	display: none;
+}
+
+.headerNavigationButtons {
+	width: 80px;
+    height: 35px;
+    margin-top: 5px;
+    font-weight: 200 !important;
+    text-align: center;
+}
+
+.goToPrevPageButton {
+	float: left;
+	margin-left: 10px;
+	padding: 5px;
+}
+
+.goToPrevPageButton:hover {
+	background-color: white;
+	border-color: white;
+	color: #00A7F2;
+	padding: 5px;
+	height: 30px;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.openAdvancedSearchButton {
+	float: left;
 }

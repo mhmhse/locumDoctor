@@ -291,8 +291,7 @@ function loadJobPost(product) {
 
 			</div>
 
-			`
-			
+			`	
 		)
 	}}
 }
@@ -302,8 +301,4 @@ function fetchJobTradingFloor(product) {
 	goToDemandMarketPlace()
 }
 
-function fetchSupplyTradingFloor(product) {
-	console.log(specialty)
-	goToSupplyMarketPlace()
-}
 
