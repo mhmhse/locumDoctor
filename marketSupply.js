@@ -26,14 +26,14 @@ function loadClinicianPost(product) {
 
 				<div class="clinicianPostSecondRow">
 					<div class="clinicianPostSecondRowInnerCover">
-						<div class="fullTimeIcon${clinicianIndex}"></div>
-						<span class="partTimeIcon${clinicianIndex} glyphicon glyphicon-adjust" aria-hidden="true"></span>
-						<span class="overTimeIcon${clinicianIndex}  glyphicon glyphicon-time" aria-hidden="true"></span>
-						<span class="nightShiftIcon${clinicianIndex} glyphicon glyphicon-lamp" aria-hidden="true"></span>
-						<span class="onCallIcon${clinicianIndex} glyphicon glyphicon-phone-alt" aria-hidden="true"></span>
-						<span class="travellingOkIcon${clinicianIndex} glyphicon glyphicon-plane" aria-hidden="true"></span>
+						<div onmouseover="showIconDescription('fullTime', ${clinicianIndex})" class="fullTimeIcon fullTimeIcon${clinicianIndex}"></div>
+						<span onmouseover="showIconDescription('partTime', ${clinicianIndex})" class="partTimeIcon partTimeIcon${clinicianIndex} glyphicon glyphicon-adjust" aria-hidden="true"></span>
+						<span onmouseover="showIconDescription('overTime', ${clinicianIndex})" class="overTimeIcon overTimeIcon${clinicianIndex}  glyphicon glyphicon-time" aria-hidden="true"></span>
+						<span onmouseover="showIconDescription('nightShift', ${clinicianIndex})" class="nightShiftIcon nightShiftIcon${clinicianIndex} glyphicon glyphicon-lamp" aria-hidden="true"></span>
+						<span onmouseover="showIconDescription('onCall', ${clinicianIndex})" class="onCallIcon onCallIcon${clinicianIndex} glyphicon glyphicon-phone-alt" aria-hidden="true"></span>
+						<span onmouseover="showIconDescription('travelling', ${clinicianIndex})" class="travellingOkIcon travellingOkIcon${clinicianIndex} glyphicon glyphicon-plane" aria-hidden="true"></span>
 					</div>
-					<div class="iconLegend${clinicianIndex}"></div>
+					<div class="iconLegend iconLegend${clinicianIndex}"></div>
 				</div>
 
 				<div class="clinicianPostThirdRow">
@@ -55,11 +55,11 @@ function loadClinicianPost(product) {
 						<div class="clinicianAvailability">
 							<div class="clinicianHoursPerWeek">${clinicianInventory[clinicianIndex]["weeklyHours"]} Hours/Week</div>
 						</div>
-						<div class="clinicianRatesReplaceOnHover">
+						<div onmouseover=hoverClinicianRatesSavings(${clinicianInventory[clinicianIndex]["wageExpectation"]}) class="clinicianRatesReplaceOnHover">
 							<div class="clinicianRates">$${clinicianInventory[clinicianIndex]["wageExpectation"]} per Hour</div>
 							<div class="clinicianSavings">
 								<div class="clinicianSavingsBeforeHover">
-									<div class="clinicianSavingFigures">Saving<br>$960 per Pay Check</div>
+									<div class="clinicianSavingFigures">Saving<br>$${clinicianInventory[clinicianIndex]["wageExpectation"]*80*0.3} per Pay Check</div>
 									<div class="clinicianSavingHow">How?</div>
 								</div>
 							</div>
@@ -69,55 +69,6 @@ function loadClinicianPost(product) {
 			</div>
 			`
 		)
-
-		$(`.fullTimeIcon${clinicianIndex}`).hover(
-			function() {
-				$(`.iconLegend${clinicianIndex}`).text("Looking for full time")
-			}, function() {
-				$(`.iconLegend${clinicianIndex}`).empty()
-			}
-		)
-
-		$(".partTimeIcon").hover(
-			function() {
-				$(".iconLegend").text("Looking for part time")
-			}, function() {
-				$(".iconLegend").empty()
-			}
-		)
-
-		$(".overTimeIcon").hover(
-			function() {
-				$(".iconLegend").text("Overtime is OK")
-			}, function() {
-				$(".iconLegend").empty()
-			}
-		)
-
-		$(".nightShiftIcon").hover(
-			function() {
-				$(".iconLegend").text("I am willing to do nightshift")
-			}, function() {
-				$(".iconLegend").empty()
-			}
-		)
-
-		$(".onCallIcon").hover(
-			function() {
-				$(".iconLegend").text("On call is fine by me")
-			}, function() {
-				$(".iconLegend").empty()
-			}
-		)
-
-		$(".travellingOkIcon").hover(
-			function() {
-				$(".iconLegend").text("Traveling is good")
-			}, function() {
-				$(".iconLegend").empty()
-			}
-		)
-
 
 		$(".clinicianRatesReplaceOnHover").hover(
 			function() {
@@ -163,13 +114,75 @@ function loadClinicianPost(product) {
 
 }
 
+function hoverClinicianRatesSavings(xExample) {
+	console.log(xExample)
+}
+
+function showIconDescription(iconType, divIndex) {
+	
+	if (iconType = "fullTime") {
+		$(`.fullTimeIcon${divIndex}`).hover(
+			function() {
+				$(`.iconLegend${divIndex}`).text("Full Time")
+			}, function() {
+				$(`.iconLegend${divIndex}`).empty()
+			}
+		)
+	}
+
+	if (iconType = "partTime") {
+		$(`.partTimeIcon${divIndex}`).hover(
+			function() {
+				$(`.iconLegend${divIndex}`).text("Part Time")
+			}, function() {
+				$(`.iconLegend${divIndex}`).empty()
+			}
+		)
+	}
+
+	if (iconType = "overTime") {
+		$(`.overTimeIcon${divIndex}`).hover(
+			function() {
+				$(`.iconLegend${divIndex}`).text("Overtime is OK")
+			}, function() {
+				$(`.iconLegend${divIndex}`).empty()
+			}
+		)
+	}
+
+	if (iconType = "nightshift") {
+		$(`.nightShiftIcon${divIndex}`).hover(
+			function() {
+				$(`.iconLegend${divIndex}`).text("Open to nightshift")
+			}, function() {
+				$(`.iconLegend${divIndex}`).empty()
+			}
+		)
+	}
+
+	if (iconType = "onCall") {
+		$(`.onCallIcon${divIndex}`).hover(
+			function() {
+				$(`.iconLegend${divIndex}`).text("Willing to be oncall")
+			}, function() {
+				$(`.iconLegend${divIndex}`).empty()
+			}
+		)
+	}
+
+	if (iconType = "travelling") {
+		$(`.travellingOkIcon${divIndex}`).hover(
+			function() {
+				$(`.iconLegend${divIndex}`).text("Happy to Travel")
+			}, function() {
+				$(`.iconLegend${divIndex}`).empty()
+			}
+		)
+	}
+
+}
+
 function fetchSupplyTradingFloor(product) {
 	loadClinicianPost(product)
 	goToSupplyMarketPlace()
 }
-
-$(document).ready(function() { 
-
-	// event.preventDefault()
-
-})

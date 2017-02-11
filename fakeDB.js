@@ -1,4 +1,4 @@
-var supplyProducts = ["Dental Hygenists", "Registered Nurses", "APRNs", "Dentist", "Emergency Room Nurses", "Brain Surgeons", "General Practicioners", "Anestheiologists", "Pharmacists", "Office Assistants"]
+var supplyProducts = ["Dentist", "Cardiac Surgeon"]
 supplyProducts.sort()
 
 var demandProducts = ["Nurse Practicioner", "Dentist", "Dental Hygienist", "APRN"]
@@ -230,7 +230,7 @@ var clinicianInventory = [
 		residenceType: "Residence",
 		hospitalAffiliation: ["Mt. Sinai Medical Center", "Mayo Clinic"],
 		weeklyHours: "20-40",
-		wageExpectation: "80"
+		wageExpectation: "280"
 	},
 	{
 		lastName: "Medicine",
@@ -253,13 +253,13 @@ var clinicianInventory = [
 		residenceType: "Residence",
 		hospitalAffiliation: ["Mt. Sinai Medical Center", "Mayo Clinic"],
 		weeklyHours: "20-40",
-		wageExpectation: "80"
+		wageExpectation: "150"
 	},
 	{
 		lastName: "Medicine",
 		firstName: "Sarah",
 		title: "MPSD",
-		product: "Cardiac Surgeon",
+		product: "CardiacSurgeon",
 		specialty: "Heart Transplant Special Surgeon",
 		experience: "5+",
 		location: "Brooklyn, NY",
@@ -276,7 +276,7 @@ var clinicianInventory = [
 		residenceType: "Residence",
 		hospitalAffiliation: ["Mt. Sinai Medical Center", "Mayo Clinic"],
 		weeklyHours: "20-40",
-		wageExpectation: "80"
+		wageExpectation: "4000"
 	},
 	{
 		lastName: "Carson",
@@ -299,7 +299,7 @@ var clinicianInventory = [
 		residenceType: "Residence",
 		hospitalAffiliation: ["Mt. Sinai Medical Center", "Mayo Clinic"],
 		weeklyHours: "20-40",
-		wageExpectation: "80"
+		wageExpectation: "5000"
 	},
 	{
 		lastName: "Medicine",
@@ -322,6 +322,6 @@ var clinicianInventory = [
 		residenceType: "Residence",
 		hospitalAffiliation: ["Mt. Sinai Medical Center", "Mayo Clinic"],
 		weeklyHours: "20-40",
-		wageExpectation: "80"
+		wageExpectation: "120"
 	}
 ]
