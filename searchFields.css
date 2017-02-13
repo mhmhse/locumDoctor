@@ -16,6 +16,21 @@ body {
     line-height: 2 !important;
 }
 
+@media (max-width: 700px) {
+	.frontPageIntro {
+		font-family: brandon-grotesque, sans-serif !important;
+	    font-weight: 400 !important;
+	    font-size: 30px !important;
+	    line-height: 46px !important;
+	    letter-spacing: 0.05em !important;
+	    width: 80%;
+	    min-width: 400px;
+	    text-align: center;
+	    margin: 0 auto 0 auto !important;
+	    line-height: 2 !important;
+	}
+}
+
 .frontPage {
 	font-family: proxima-nova, sans-serif !important;
 	text-shadow: 0 1px 5px rgba(0,0,0,.25);

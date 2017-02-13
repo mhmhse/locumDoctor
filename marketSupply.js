@@ -1,3 +1,7 @@
+function dollarAmountSeparator(amount) {
+	return amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
 function loadClinicianPost(product) {
 	
 	$(".marketplaceContentsCover").empty()
@@ -51,15 +55,16 @@ function loadClinicianPost(product) {
 							<p class="clinicianSubheader">${clinicianInventory[clinicianIndex]["hospitalAffiliation"][1]}</p>
 						</div>
 					</div>
+
 					<div class="clinicianPreference">
 						<div class="clinicianAvailability">
 							<div class="clinicianHoursPerWeek">${clinicianInventory[clinicianIndex]["weeklyHours"]} Hours/Week</div>
 						</div>
-						<div onmouseover=hoverClinicianRatesSavings(${clinicianInventory[clinicianIndex]["wageExpectation"]}) class="clinicianRatesReplaceOnHover">
-							<div class="clinicianRates">$${clinicianInventory[clinicianIndex]["wageExpectation"]} per Hour</div>
-							<div class="clinicianSavings">
+						<div onmouseover="hoverClinicianRatesSavings('${clinicianIndex}', ${clinicianInventory[clinicianIndex]["wageExpectation"]})" class="clinicianRatesReplaceOnHover">
+							<div class="clinicianRates${clinicianIndex}">$${dollarAmountSeparator(clinicianInventory[clinicianIndex]["wageExpectation"])} per Hour</div>
+							<div class="clinicianSavings${clinicianIndex}">
 								<div class="clinicianSavingsBeforeHover">
-									<div class="clinicianSavingFigures">Saving<br>$${clinicianInventory[clinicianIndex]["wageExpectation"]*80*0.3} per Pay Check</div>
+									<div class="clinicianSavingFigures${clinicianIndex}">Saving<br>$${dollarAmountSeparator(clinicianInventory[clinicianIndex]["wageExpectation"]*80*0.3)} per Pay Check</div>
 									<div class="clinicianSavingHow">How?</div>
 								</div>
 							</div>
@@ -70,52 +75,74 @@ function loadClinicianPost(product) {
 			`
 		)
 
-		$(".clinicianRatesReplaceOnHover").hover(
-			function() {
-				$(".clinicianRates").replaceWith(
-					`
-					<div class="clinicianSavingsBreakdown">
-						Staffing Agencies</br>
-						($80/hr x 1.7) x 80hrs</br>$5,440
-					</div>
-					`
-				)
-				$(".clinicianSavings").replaceWith(
-					`
-					<div class="clinicianSavingsBreakdownCover">
-						<div class="clinicianSavingsBreakdown">
-							Locum Health</br>
-							($80/hr x 1.4) x 80hrs</br>$4,480
-						</div>
-						<div class="totalClinicSavings">
-							Savings</br>$960 per Paycheck 
-						</div>
-					</div>
-					`
-				)
-			}, function() {
-				$(".clinicianSavingsBreakdown").replaceWith(
-					`<div class="clinicianRates">$80 per Hour</div>`
-				)
-				$(".clinicianSavingsBreakdownCover").replaceWith(
-					`
-					<div class="clinicianSavings">
-						<div class="clinicianSavingsBeforeHover">
-							<div class="clinicianSavingFigures">Saving<br>$960 per Pay Check</div>
-							<div class="clinicianSavingHow">How?</div>
-						</div>
-					</div>
-					`
-				)
-			}
-		)
+		// $(".clinicianRatesReplaceOnHover").hover(
+		// 	function() {
+		// 		$(".clinicianRates").replaceWith(
+		// 			`
+		// 			<div class="clinicianSavingsBreakdown">
+		// 				Staffing Agencies</br>
+		// 				($80/hr x 1.7) x 80hrs</br>$5,440
+		// 			</div>
+		// 			`
+		// 		)
+		// 		$(".clinicianSavings").replaceWith(
+		// 			`
+		// 			<div class="clinicianSavingsBreakdownCover">
+		// 				<div class="clinicianSavingsBreakdown">
+		// 					Locum Health</br>
+		// 					($80/hr x 1.4) x 80hrs</br>$4,480
+		// 				</div>
+		// 				<div class="totalClinicSavings">
+		// 					Savings</br>$960 per Paycheck 
+		// 				</div>
+		// 			</div>
+		// 			`
+		// 		)
+		// 	}, function() {
+		// 		$(".clinicianSavingsBreakdown").replaceWith(
+		// 			`<div class="clinicianRates">$80 per Hour</div>`
+		// 		)
+		// 		$(".clinicianSavingsBreakdownCover").replaceWith(
+		// 			`
+		// 			<div class="clinicianSavings">
+		// 				<div class="clinicianSavingsBeforeHover">
+		// 					<div class="clinicianSavingFigures">Saving<br>$960 per Pay Check</div>
+		// 					<div class="clinicianSavingHow">How?</div>
+		// 				</div>
+		// 			</div>
+		// 			`
+		// 		)
+		// 	}
+		// )
 
 	}
 
 }
 
-function hoverClinicianRatesSavings(xExample) {
-	console.log(xExample)
+function hoverClinicianRatesSavings(indexNumber, perHourAmount) {
+
+	$(`.clinicianRates${indexNumber}`).replaceWith(
+		`
+		<div class="clinicianSavingsBreakdown">
+			Staffing Agencies</br>
+			($${dollarAmountSeparator(perHourAmount)}/hr x 1.7) x 80hrs</br>$${dollarAmountSeparator(perHourAmount*1.7*80)}
+		</div>
+		`
+	)
+
+	$(`.clinicianSavings${indexNumber}`).replaceWith(
+		`
+		<div class="clinicianSavingsBreakdownCover">
+			<div class="clinicianSavingsBreakdown">
+				Orchard Health</br>
+				($${dollarAmountSeparator(perHourAmount)} x 1.4) x 80hrs</br>$${dollarAmountSeparator(perHourAmount*1.4*80)}
+			</div>
+			<div class="totalClinicSavings">
+				<b>Savings</b></br><u>$${dollarAmountSeparator(perHourAmount*1.7*80 - perHourAmount*1.4*80)}</u> per Paycheck
+			</div>
+		</div>
+		`
+	)
 }
 
 function showIconDescription(iconType, divIndex) {
