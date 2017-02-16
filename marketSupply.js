@@ -2,6 +2,339 @@ function dollarAmountSeparator(amount) {
 	return amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
+function fetchCandidateInfoLegend(fieldsBeingFetched) {
+
+	console.log("working")
+
+	$(".candidateInfoDetails").empty()
+
+	if (fieldsBeingFetched === "experience") {
+		$(".candidateInfoDetails").append(
+			`
+			<div class="candidateProfessionalExperience">
+				<div class="candidateHeader">Professional Experience</div>
+				<div class="candidateElementTitle">New York University Langone Medical Center</div>
+				<div class="candidateElementDesc">
+					Freelance clinical work made easy. Seamlessly communicate and contract with facilities. Freelance clinical work made easy. Seamlessly communicate and contract with facilities. Freelance clinical work made easy. Seamlessly communicate and contract with facilities.
+				</div>
+				<div class="candidateElementTitle">Mt. Sinai Medical Center</div>
+				<div class="candidateElementDesc">
+					Freelance clinical work made easy. Seamlessly communicate and contract with facilities. Freelance clinical work made easy. Seamlessly communicate and contract with facilities. Freelance clinical work made easy. Seamlessly communicate and contract with facilities.
+				</div>
+				<div class="candidateElementTitle">Beth Israel Medical Center</div>
+				<div class="candidateElementDesc">
+					Freelance clinical work made easy. Seamlessly communicate and contract with facilities. Freelance clinical work made easy. Seamlessly communicate and contract with facilities. Freelance clinical work made easy. Seamlessly communicate and contract with facilities.
+				</div>
+			</div>
+			`
+		)
+	}
+
+	if (fieldsBeingFetched === "requirements") {
+		$(".candidateInfoDetails").append(
+			`
+			<div class="requirements">
+				<div class="container">
+
+				</div>
+				<div class="container">
+					<div class="requirementsFloatLeft requirmentsCurrentLocation">
+						Current Location: New York, NY
+					</div>
+					<div class="requirementsFloatLeft requirmentsTraveling">
+						Traveling: <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+					</div>
+				</div>
+				<div class="container">
+					<div class="requirementsFloatLeft requirmentsFullTime">
+						Full-time: <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+					</div>
+					<div class="requirementsFloatLeft requirmentsPartTime">
+						Part-time: <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+					</div>
+					<div class="requirementsFloatLeft requirmentsOverTime">
+						Overtime: <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+					</div>
+					<div class="requirementsFloatLeft requirmentsOpenToCall">
+						Open To Call: <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+					</div>
+				</div>
+				<div class="container">
+					<div class="requirementsFloatLeft requirmentsHoursExpectations">
+					</div>
+					<div class="requirementsFloatLeft requirmentsWageExpectations">
+					</div>
+				</div>
+				<div class="container">
+					<div class="requirementsFloatLeft requirmentsSpecsExpectations">
+					</div>
+					<div class="requirementsFloatLeft requirmentsCaseloadExpectations">
+					</div>
+				</div>
+			</div>
+			`
+		)		
+	}
+
+	if (fieldsBeingFetched === "reviews") {
+		$(".candidateInfoDetails").append(
+			`
+			<div class="requirements">
+				<div class="container">
+					Review 1
+				</div>
+				<div class="container">
+					Review 2
+				</div>
+				<div class="container">
+					Review 3
+				</div>
+				<div class="container">
+					Review 4
+				</div>
+			</div>
+			`
+		)		
+	}
+
+	if (fieldsBeingFetched === "interview") {
+		$(".candidateInfoDetails").append(
+			`
+			<div class="requirements">
+				<div class="container">
+					Contact for Specific Questions
+				</div>
+				<div class="container">
+					Schedule Interview
+				</div>
+				<div class="container">
+					Negotiate the Price for Long Term
+				</div>
+			</div>
+			`
+		)		
+	}
+
+}
+
+function loadCandidateDetails(indexNumber) {
+	// var myWindow = window.open("", "MsgWindow", "width=200,height=100");
+	// myWindow.document.write("<p>This is 'MsgWindow'. I am 200px wide and 100px tall!</p>");
+
+	var thisVarNameNeedsToBeChangeDynamically = window.open("12312", "_blank", "", "");
+	thisVarNameNeedsToBeChangeDynamically.document.write(
+		`
+		<!DOCTYPE html>
+		<html>
+
+			<head>
+
+				<script src="marketSupply.js"></script>
+				<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+				<style>
+
+					body {
+					    font-family: proxima-nova, sans-serif !important;
+					    -webkit-font-smoothing: antialiased !important;
+					    font-weight: 200;
+					    font-size: 15px;
+					}
+
+					.requirementsFloatLeft {
+						float: left;
+					}
+
+					.candidateCover {
+						width: 90vw;
+					    overflow: auto;
+					    border-style: solid;
+					    border-color: #aad4e2;
+					    border-width: 1px;
+					    margin: 5vw;
+					}
+
+					.candidateInfoLeft {
+						width: 38vw;
+					    height: 500px;
+					    margin: 2.5vw;
+					    padding: 0;
+					    border-right-style: solid;
+					    border-right-color: #aad4e2;
+					    border-right-width: 1px;
+					    float: left;
+					}
+
+					.candidateInfoRight {
+						width: 45vw;
+					    height: 500px;
+					    margin: 2.5vw 0 0 0;
+					    padding: 0;
+					    float: left;
+					}
+
+					.candidateSynopsisImg {
+						float: left;
+					    width: 150px;
+					    height: 150px;
+					    border-radius: 100%;
+					    overflow: hidden;
+					    object-fit: cover;
+					}
+
+					.candidateSynopsisRight {
+					    float: left;
+    					margin-left: 2vw;
+					}
+
+					.candidateSynopsisNameTitle {
+						font-size: 25px;
+					    font-weight: 200;
+					    line-height: 2;
+					    padding-top: 10px
+					}
+
+					.candidateSynopsisFirstSet {
+						font-size: 15px;
+					    font-weight: 200;
+					    line-height: 1.5;				
+					}
+
+					.candidateResume {
+						width: 38vw;
+						overflow: auto;
+						margin-top: 3vh;
+					}
+
+					.candidateSynopsis {
+						width: 38vw;
+						overflow: auto;
+					}
+
+					.candidateInfoLegend {
+						width: 45vw;
+					    overflow: auto;
+					}
+
+					.candidateInfoDetails {
+						width: 42.8vw;
+					    overflow: auto;
+					    margin-left: 0.8vw;
+					    margin-top: 1vw;
+					}
+
+					.candidateInfoLegendElement {
+						width: 120px;
+					    margin-left: 10px;
+					    overflow: auto;
+					    float: left;
+					    text-align: center;
+					    font-weight: 400;
+					    border-style: solid;
+					    border-width: 1px;
+					    border-bottom-style: none;
+					    padding: 7px;
+					   	border-color: #AAD4E2;
+					}
+
+					.candidateHeader {
+					    font-weight: 400;
+					}
+
+					.candidateElementTitle {
+						margin-top: 15px;
+    					font-weight: 400;
+					}
+
+					.candidateElementDesc {
+						margin-top: 10px;
+    					line-height: 1.5;
+					}
+
+					.requirementsFloatLeft {
+						float: left;
+					}
+
+					.synopsisGlyphicon {
+						margin-right: 10px;
+					}
+
+				</style>
+
+			</head>
+
+			<body>
+				<div class="candidateCover">
+					
+					<div class="candidateInfoLeft">
+						<div class="candidateSynopsis">
+							<img class="candidateSynopsisImg" src="https://cdn.healthcitycaymanislands.com/gallery/misc/dynamic/so-img-alt.png-nggid03254-ngg0dyn-0x0x100-00f0w010c010r110f110r010t010.png">
+							<div class="candidateSynopsisRight">
+								<div class="candidateSynopsisFirstSet">
+									<div class="candidateSynopsisNameTitle">Camilla Bruni MD</div>
+									<div class="candidateSynopsisSpecialty"><span class="synopsisGlyphicon glyphicon glyphicon-education" aria-hidden="true"></span>Urology Specialist</div>
+									<div class="candidateSynopsisLocation"><span class="synopsisGlyphicon glyphicon glyphicon-map-marker" aria-hidden="true"></span>Bethesda, MD</div>
+									<div class="candidateSynopsisExperience"><span class="synopsisGlyphicon glyphicon glyphicon-briefcase" aria-hidden="true"></span>3+ years experience</div>
+									<div class="candidateSynopsisLanguage"><span class="synopsisGlyphicon glyphicon glyphicon-globe" aria-hidden="true"></span>English, French, Spanish</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="candidateResume">
+							<div class="candidateSpecialtyList">
+								Specialty
+								<ul>Urology General Consultations</ul>
+								<ul>Expertise in Senior Urology Care</ul>
+								<ul>Expertise in Urologic Pain Management</ul>
+							</div>
+							<div class="candidateAcademicBackground">
+								Residency
+								<ul>New York University Langone Medical Center</ul>
+								<ul>Pfizer Labatories</ul>
+								Education
+								<ul>Johns Hopkins University Schools of Medicine <i>MD</i></ul>
+								<ul>University of North Carolina, Chapel Hill <i>BSc</i></ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="candidateInfoRight">
+						<div class="candidateInfoLegend">
+							<a class="candidateInfoLegendElement" onclick="fetchCandidateInfoLegend('experience')">Experience</a>
+							<a class="candidateInfoLegendElement" onclick="fetchCandidateInfoLegend('requirements')">Requirements</a>
+							<a class="candidateInfoLegendElement" onclick="fetchCandidateInfoLegend('reviews')">Reviews</a>
+							<a class="candidateInfoLegendElement" onclick="fetchCandidateInfoLegend('interview')">Interview</a>
+						</div>
+
+						<div class="candidateInfoDetails">
+							<div class="candidateProfessionalExperience">
+								<div class="candidateHeader">Professional Experience</div>
+								<div class="candidateElementTitle">New York University Langone Medical Center</div>
+								<div class="candidateElementDesc">
+									Freelance clinical work made easy. Seamlessly communicate and contract with facilities. Freelance clinical work made easy. Seamlessly communicate and contract with facilities. Freelance clinical work made easy. Seamlessly communicate and contract with facilities.
+								</div>
+								<div class="candidateElementTitle">Mt. Sinai Medical Center</div>
+								<div class="candidateElementDesc">
+									Freelance clinical work made easy. Seamlessly communicate and contract with facilities. Freelance clinical work made easy. Seamlessly communicate and contract with facilities. Freelance clinical work made easy. Seamlessly communicate and contract with facilities.
+								</div>
+								<div class="candidateElementTitle">Beth Israel Medical Center</div>
+								<div class="candidateElementDesc">
+									Freelance clinical work made easy. Seamlessly communicate and contract with facilities. Freelance clinical work made easy. Seamlessly communicate and contract with facilities. Freelance clinical work made easy. Seamlessly communicate and contract with facilities.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</body>
+
+		</html>
+		`
+	);
+    // redirectWindow.location;
+
+}
+
 function loadClinicianPost(product) {
 	
 	$(".marketplaceContentsCover").empty()
@@ -10,7 +343,7 @@ function loadClinicianPost(product) {
 
 		$(".marketplaceContentsCover").append(
 			`
-			<div class="marketSupplyPost">
+			<div class="marketSupplyPost" onclick="loadCandidateDetails(${clinicianIndex})">
 
 				<div class="clinicianPostFirstRow">
 					<div class="clinicianProfilePhoto">
@@ -74,49 +407,7 @@ function loadClinicianPost(product) {
 			</div>
 			`
 		)
-
-		// $(".clinicianRatesReplaceOnHover").hover(
-		// 	function() {
-		// 		$(".clinicianRates").replaceWith(
-		// 			`
-		// 			<div class="clinicianSavingsBreakdown">
-		// 				Staffing Agencies</br>
-		// 				($80/hr x 1.7) x 80hrs</br>$5,440
-		// 			</div>
-		// 			`
-		// 		)
-		// 		$(".clinicianSavings").replaceWith(
-		// 			`
-		// 			<div class="clinicianSavingsBreakdownCover">
-		// 				<div class="clinicianSavingsBreakdown">
-		// 					Locum Health</br>
-		// 					($80/hr x 1.4) x 80hrs</br>$4,480
-		// 				</div>
-		// 				<div class="totalClinicSavings">
-		// 					Savings</br>$960 per Paycheck 
-		// 				</div>
-		// 			</div>
-		// 			`
-		// 		)
-		// 	}, function() {
-		// 		$(".clinicianSavingsBreakdown").replaceWith(
-		// 			`<div class="clinicianRates">$80 per Hour</div>`
-		// 		)
-		// 		$(".clinicianSavingsBreakdownCover").replaceWith(
-		// 			`
-		// 			<div class="clinicianSavings">
-		// 				<div class="clinicianSavingsBeforeHover">
-		// 					<div class="clinicianSavingFigures">Saving<br>$960 per Pay Check</div>
-		// 					<div class="clinicianSavingHow">How?</div>
-		// 				</div>
-		// 			</div>
-		// 			`
-		// 		)
-		// 	}
-		// )
-
 	}
-
 }
 
 function hoverClinicianRatesSavings(indexNumber, perHourAmount) {

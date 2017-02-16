@@ -1,7 +1,9 @@
-$(document).ready(function(){
+function dollarAmountSeparator(amount) {
+	return amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
 
+$(document).ready(function(){
 	event.preventDefault()
-	
 	for (arrayIndex in supplyProducts) {
 
 		$(".supplyBoard").append(
@@ -13,7 +15,6 @@ $(document).ready(function(){
 		`
 		)
 	}
-
 	for (arrayIndex in demandProducts) {
 
 		$(".demandBoard").append(
@@ -24,7 +25,6 @@ $(document).ready(function(){
 		`
 		)
 	}
-
 })
 
 function loadJobDetail(jobIndex) {
@@ -210,7 +210,6 @@ function loadJobDetail(jobIndex) {
 		</html>
 		`
 	);
-
     // redirectWindow.location;
 
 }
@@ -279,7 +278,7 @@ function loadJobPost(product) {
 							</div>
 						</div>
 						<div class="marketSupplyInfoTotalIncome">
-							$${jobInventory[jobIndex]["totalHours"]*jobInventory[jobIndex]["regularRate"]} in Total
+							$${dollarAmountSeparator(jobInventory[jobIndex]["totalHours"]*jobInventory[jobIndex]["regularRate"])} in Total
 							<div class="marketSupplyInfoOvertimeRates">
 								+</br>Additional Overtime
 							</div>
@@ -299,5 +298,3 @@ function fetchJobTradingFloor(product) {
 	loadJobPost(product)
 	goToDemandMarketPlace()
 }
-
-
